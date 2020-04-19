@@ -1,0 +1,16 @@
+#!name=Remove LINE ADs
+#!desc=刪掉惱人的廣告
+#!system=ios
+
+[Rule]
+URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v1\/ei\?,REJECT
+URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT-TINYGIF
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/w384$,REJECT-TINYGIF
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/[0-9]+p\.mp4$,REJECT
+URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-TINYGIF
+URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.*\.(jpg|jpeg|png),REJECT-TINYGIF
+URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT
+
+[MITM]
+hostname = %APPEND% a.line.me, buy.line.me, obs.line-scdn.net, d.line-scdn.net, sch.line.me
