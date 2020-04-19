@@ -3,7 +3,7 @@
 #!system=ios
 
 [Rule]
-URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v1\/ei\?,REJECT
+URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT-TINYGIF
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/w384$,REJECT-TINYGIF
