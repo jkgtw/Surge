@@ -6,7 +6,6 @@
 URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT-TINYGIF
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/w384$,REJECT-TINYGIF
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/[0-9]+p\.mp4$,REJECT
 URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-TINYGIF
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.*\.(jpg|jpeg|png),REJECT-TINYGIF
