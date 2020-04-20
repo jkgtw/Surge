@@ -3,4 +3,4 @@
 #!system=ios
 
 [MITM]
-hostname = -*.apple.com, -*.icloud.com, -*.facebook.com, -*.twitter.com, -*.google.com, *
+hostname = -*.apple.com, -*.icloud.com, -*.facebook.com, -*.instagram.com, -*.twitter.com, -*.mzstatic.com, -*.crashlytics.com, *
