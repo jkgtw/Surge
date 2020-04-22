@@ -1,11 +1,12 @@
 #!name=Remove LINE ADs
-#!desc=刪掉惱人的廣告 v20200421.01
+#!desc=刪掉惱人的廣告 v20200422.01
 #!system=ios
 
 [Rule]
 URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT
 URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-TINYGIF
 URL-REGEX,^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$,REJECT
+URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT-TINYGIF
