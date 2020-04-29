@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=刪掉惱人的廣告 v20200429.01
+#!desc=刪掉惱人的廣告 v20200429.02
 #!system=ios
 
 [Rule]
@@ -20,6 +20,7 @@ DOMAIN-KEYWORD,inmobi,REJECT
 DOMAIN-KEYWORD,meetrics,REJECT
 DOMAIN-KEYWORD,supersonicads,REJECT
 DOMAIN,itad.linetv.tw,REJECT
+DOMAIN,sessions.bugsnag.com,REJECT
 DOMAIN-SUFFIX,admob.com,REJECT
 DOMAIN-SUFFIX,mopub.com,REJECT
 DOMAIN-SUFFIX,openx.com,REJECT
