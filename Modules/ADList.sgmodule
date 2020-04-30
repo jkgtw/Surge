@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=刪掉惱人的廣告 v20200430.01
+#!desc=刪掉惱人的廣告 v20200430.02
 #!system=ios
 
 [Rule]
@@ -12,7 +12,7 @@ DOMAIN-KEYWORD,admarvel,REJECT
 DOMAIN-KEYWORD,admaster,REJECT
 DOMAIN-KEYWORD,adsystem,REJECT
 DOMAIN-KEYWORD,appsflyer,REJECT
-DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,adservice,REJECT-DROP
 DOMAIN-KEYWORD,analytics,REJECT
 DOMAIN-KEYWORD,crashlytics,REJECT
 DOMAIN-KEYWORD,doubleclick,REJECT
