@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=刪掉惱人的廣告 v20200429.02
+#!desc=刪掉惱人的廣告 v20200430.01
 #!system=ios
 
 [Rule]
@@ -25,4 +25,4 @@ DOMAIN-SUFFIX,admob.com,REJECT
 DOMAIN-SUFFIX,mopub.com,REJECT
 DOMAIN-SUFFIX,openx.com,REJECT
 DOMAIN-SUFFIX,flurry.com,REJECT
-DOMAIN-SET,https://raw.githubusercontent.com/jkgtw/Surge/master/ADLists/NEOHOSTS.list,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/jkgtw/Surge/master/ADLists/AD.list,REJECT
