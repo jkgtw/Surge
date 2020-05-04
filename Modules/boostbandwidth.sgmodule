@@ -1,6 +1,6 @@
 #!name=Boost Bandwidth
-#!desc=每兩分鐘背景執行一次，勿常開 v20200503.01
+#!desc=每兩分鐘背景執行一次，勿常開 v20200504.01
 #!system=ios
 
 [Script]
-cron "*/2 * * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/getspeedtestconfig.js
+cron "*/2 20-23,0-2 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/getspeedtestconfig.js
