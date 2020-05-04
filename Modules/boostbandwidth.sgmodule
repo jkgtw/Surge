@@ -1,5 +1,5 @@
 #!name=Boost Bandwidth
-#!desc=每兩分鐘背景執行一次，勿常開 v20200504.01
+#!desc=每晚高峰時段每兩分鐘背景執行一次 v20200504.01
 #!system=ios
 
 [Script]
