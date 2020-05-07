@@ -3,8 +3,8 @@
 # https://www.malwaredomainlist.com/hostslist/hosts.txt
 # https://github.com/neofelhz/neohosts
 # For Surge DOMAIN-SET
-# Version: 20200430.02
-# Number of domains: 15229
+# Version: 20200507.01
+# Number of domains: 15262
 .0koryu0.easter.ne.jp
 .109-204-26-16.netconnexion.managedbroadband.co.uk
 .1866809.securefastserver.com
@@ -15234,3 +15234,36 @@
 .zymo.mps.weibo.com
 .zz.bdstatic.com
 .zzy1.quyaoya.com
+.tags.acmeaom.com
+.aax-us.amazon-adsystem.com
+.aan.amazon.com
+.aax-us-iad.amazon.com
+.aa5dbe242ad94ceba164ecf25b68c84e.mediatailor.us-west-2.amazonaws.com
+.smetrics.att.com
+.ffg-analytics-functionsk3nvxfne4dp4s.azurewebsites.net
+.i.clean.gg
+.cookies.onetrust.mgr.consensu.org
+.a6709203f34992a5095d2bc7ceaf2ec504f651a8.cws.conviva.com
+.cdn.cookielaw.org
+.firebase-settings.crashlytics.com
+.pixel.facebook.com
+.king-contenido-prod.secure2.footprint.net
+.phar.gu-web.net
+.glimmer.hearstapps.com
+.analytics.jumboprivacy.com
+.mobile.launchdarkly.com
+.api2.okanjo.com
+.cdn.okanjo.com
+.att.sc.omtrdc.net
+.geolocation.onetrust.com
+.aa.online-metrix.net
+.h.online-metrix.net
+.topapps-func.pinsightmedia.com
+.att.productmadness.com
+.s.skimresources.com
+.metrics-logger.spot.im
+.30572.identity.swrve.com
+.analytics-ingestion.production-public.tubi.io
+.hail-reporting.tutelatechnologies.com
+.rawtelemetry-west.servicebus.windows.net
+.infinity-c4.youboranqs01.com
