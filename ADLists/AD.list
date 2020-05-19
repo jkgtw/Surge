@@ -3,7 +3,7 @@
 # https://www.malwaredomainlist.com/hostslist/hosts.txt
 # https://github.com/neofelhz/neohosts
 # https://github.com/CHEF-KOCH/NSABlocklist
-# 只適用新版 Surge DOMAIN-SET 規則
+# 只適用 Surge v4.2.2 以上版本
 # Version: 20200513.01
 # Number of domains: 23454
 .0.r.msn.com
