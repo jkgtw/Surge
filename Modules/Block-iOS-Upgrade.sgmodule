@@ -1,0 +1,8 @@
+#!name=Block iOS Upgrade
+#!desc=阻擋 iOS 系統升級
+#!system=ios
+
+[Rule]
+DOMAIN,mesu.apple.com,REJECT
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,updates-http.cdn-apple.com,REJECT
