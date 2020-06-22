@@ -4,8 +4,8 @@
 # https://github.com/neofelhz/neohosts
 # https://github.com/CHEF-KOCH/NSABlocklist
 # 只適用 Surge v4.2.2 以上版本
-# Version: 20200513.01
-# Number of domains: 23454
+# Version: 20200622.01
+# Number of domains: 23802
 .0.r.msn.com
 .0koryu0.easter.ne.jp
 .1.allyes.com.cn
@@ -390,6 +390,7 @@
 .3970.api.swrve.com
 .3970.content.swrve.com
 .397c0.admaster.com.cn
+.397c0.admaster.com.cn
 .3990.api.swrve.com
 .3991.api.swrve.com
 .3991.content.swrve.com
@@ -703,11 +704,14 @@
 .a.adgear.com
 .a.adnium.com
 .a.ads1.msn.com
+.a.ads1.msn.com
+.a.ads2.msn.com
 .a.ads2.msn.com
 .a.adskeeper.co.uk
 .a.adsrvr.org
 .a.adtech.de
 .a.adtechus.com
+.a.adtng.com
 .a.adtng.com
 .a.algovid.com
 .a.alimama.cn
@@ -716,6 +720,7 @@
 .a.appjiagu.com
 .a.applovin.com
 .a.applvn.com
+.a.baidu.com
 .a.baidu.com
 .a.beilamusi.com
 .a.benshiw.net
@@ -808,7 +813,6 @@
 .aa-d.openx.net
 .aa.adfarm1.adition.com
 .aa.online-metrix.net
-.aa5dbe242ad94ceba164ecf25b68c84e.mediatailor.us-west-2.amazonaws.com
 .aa7bd76554cff2d93d33288d31aa6839.api.appsee.com
 .aaadel.mantraonline.com
 .aajtak.pushwoosh.com
@@ -824,8 +828,10 @@
 .aax-fe-sin.amazon-adsystem.com
 .aax-fe.amazon-adsystem.com
 .aax-us-east.amazon-adsystem.com
+.aax-us-east.amazon-adsystem.com
 .aax-us-iad.amazon.com
 .aax-us.amazon-adsystem.com
+.aax.amazon-adsystem.com
 .aax.amazon-adsystem.com
 .ab-mknodepub.marketo.com
 .ab.airpush.com
@@ -869,6 +875,7 @@
 .ac.atpanel.com
 .ac.batmobi.net
 .ac.mmstat.com
+.ac.mmstat.com
 .ac.openx.com
 .ac3.msn.com
 .acc.magixite.com
@@ -888,11 +895,13 @@
 .accounts.doubleclick.net
 .accscdn.m.taobao.com
 .acdn.adnxs.com
+.acdn.adnxs.com
 .acento.com
 .acf.gov
 .ach.appodeal.com
 .achp.gov
 .achren.org
+.acjs.aliyun.com
 .acjs.aliyun.com
 .ackak.com
 .acl.gov
@@ -901,7 +910,7 @@
 .acool.csheaven.com
 .acp.fyber.com
 .acquisition.gov
-.acs.m.taobao.com
+.acs4baichuan.m.taobao.com
 .acs4baichuan.m.taobao.com
 .acsseo.com
 .act.commercial.shouji.360.cn
@@ -918,7 +927,6 @@
 .activate-sea.adobe.com
 .activate-sjc0.adobe.com
 .activate.adobe.com
-.activate.boostmobile.com
 .activate.wip3.adobe.com
 .active.iperceptions.com
 .activenetwork-d.openx.net
@@ -936,12 +944,14 @@
 .acwi.gov
 .ad-analytics-bootstrap.metaps.com
 .ad-apac.doubleclick.net
+.ad-apac.doubleclick.net
 .ad-beast.com
 .ad-bg.adwo.com
 .ad-cloud.jp
 .ad-count.adwo.com
 .ad-creatives-public.commondatastorage.googleapis.com
 .ad-dc2.adtech.de
+.ad-delivery.net
 .ad-delivery.net
 .ad-e1.media6degrees.com
 .ad-e2.media6degrees.com
@@ -1001,11 +1011,14 @@
 .ad.dc2.adtech.de
 .ad.dev.360.cn
 .ad.doubleclick.net
+.ad.doubleclick.net
 .ad.dqwjzm.com
+.ad.duapps.com
 .ad.duapps.com
 .ad.eg.doubleclick.net
 .ad.ettoday.net
 .ad.flipboard.com
+.ad.flurry.com
 .ad.flurry.com
 .ad.fout.jp
 .ad.gamebox.360.cn
@@ -1052,8 +1065,10 @@
 .ad.period-calendar.com
 .ad.pl.doubleclick.net
 .ad.player.baidu.com
+.ad.player.baidu.com
 .ad.propellerads.com
 .ad.qingting.fm
+.ad.qq.com
 .ad.qq.com
 .ad.qun.qq.com
 .ad.rfp.fout.jp
@@ -1072,6 +1087,7 @@
 .ad.weplayer.cc
 .ad.winrar.com.cn
 .ad.wretch.cc
+.ad.ximalaya.com
 .ad.ximalaya.com
 .ad.xxguan.cn
 .ad.zing.vn
@@ -1123,10 +1139,15 @@
 .adapi.shouji.360.cn
 .adasad.myweb.hinet.net
 .adash.m.taobao.com
+.adash.m.taobao.com
 .adash.man.aliyuncs.com
 .adashbc.m.taobao.com
+.adashbc.m.taobao.com
+.adashbc.ut.taobao.com
 .adashbc.ut.taobao.com
 .adashx.m.taobao.com
+.adashx.m.taobao.com
+.adashxgc.ut.taobao.com
 .adashxgc.ut.taobao.com
 .adasiaholdings.com
 .adasiatagmanager.appspot.com
@@ -1148,6 +1169,7 @@
 .adbutler.de
 .adc-ad-assets.adtilt.com
 .adc3-assets.adcolony.com
+.adc3-launch.adcolony.com
 .adc3-launch.adcolony.com
 .adcamp.ru
 .adcast.deviantart.com
@@ -1182,11 +1204,13 @@
 .ade-beta.media6degrees.com
 .ade.clmbtech.com
 .ade.googlesyndication.com
+.ade.googlesyndication.com
 .adecn-w.atdmt.com
 .adelphic-partners.tremorhub.com
 .adelva.com
 .aden.baidu.com
 .adevents.msn.com
+.adeventtracker.spotify.com
 .adeventtracker.spotify.com
 .adex.bmediaasia.com
 .adex2.bmediaasia.com
@@ -1197,6 +1221,7 @@
 .adfactor.nl
 .adfalcon.com
 .adfarm.mediaplex.com
+.adfill.adview.cn
 .adfill.adview.cn
 .adfilter.imtt.qq.com
 .adflake.com
@@ -1212,6 +1237,7 @@
 .adfox.yandex.ru
 .adfurikun.jp
 .adfuture.cn
+.adfuture.cn
 .adgallery.whitehousedrugpolicy.gov
 .adgear.com
 .adgeo.163.com
@@ -1226,7 +1252,9 @@
 .adi.admicro.vn
 .adimages.sina.com.hk
 .adimg.daumcdn.net
+.adimg.daumcdn.net
 .adimg.deviantart.net
+.adimg.mobile.sina.cn
 .adimg.mobile.sina.cn
 .adimg.net
 .adimg.qxlsjw.com
@@ -1252,6 +1280,7 @@
 .adlock.in
 .adlockscreen.goforandroid.com
 .adlog.flurry.com
+.adlog.flurry.com
 .adlog.foxitcloud.com
 .adlog.tagtic.cn
 .adlog.vivo.com.cn
@@ -1259,6 +1288,7 @@
 .adm-assets.vrvm.com
 .adm-cdn.vrtzads.com
 .adm-td.adnow.com
+.adm.baidu.com
 .adm.baidu.com
 .adm.dynamicyield.com
 .adm.fwmrm.net
@@ -1346,6 +1376,7 @@
 .admulti.ru
 .adn.atdmt.com
 .adn.insight.ucweb.com
+.adn.insight.ucweb.com
 .adname.ru
 .adnection.com
 .adnet-media.net
@@ -1376,6 +1407,7 @@
 .adpacks.com
 .adpdx.com
 .adpickup-east.adhaven.com
+.adping.qq.com
 .adping.qq.com
 .adplatform.vrtcal.com
 .adplex.co.kr
@@ -1450,6 +1482,7 @@
 .ads.adand.co.kr
 .ads.adap.tv
 .ads.adaptv.advertising.com
+.ads.adaptv.advertising.com
 .ads.addealsnetwork.com
 .ads.adecosystems.net
 .ads.adecosystems.tech
@@ -1510,6 +1543,7 @@
 .ads.contextweb.com
 .ads.converge-digital.com
 .ads.creative-serving.com
+.ads.creative-serving.com
 .ads.crispadvertising.com
 .ads.databrainz.com
 .ads.deliverimp.com
@@ -1524,12 +1558,15 @@
 .ads.finance.yahoo.com
 .ads.fingersoft.net
 .ads.flurry.com
+.ads.flurry.com
 .ads.fotoable.com
 .ads.fotoable.net
 .ads.genieessp.com
 .ads.gionee.com
 .ads.glispa.com
 .ads.gmodules.com
+.ads.gmodules.com
+.ads.google.com
 .ads.google.com
 .ads.heyzap.com
 .ads.ibtracking.com
@@ -1569,6 +1606,7 @@
 .ads.mopub.pub
 .ads.mp.mydas.mobi
 .ads.msn.com
+.ads.msn.com
 .ads.nc.cname.inmobi.com
 .ads.netflix.com
 .ads.nexage.com
@@ -1589,6 +1627,7 @@
 .ads.pro-market.net
 .ads.programattik.com
 .ads.pubmatic.com
+.ads.pubmatic.com
 .ads.quantserve.com
 .ads.rd.linksynergy.com
 .ads.reembed.com
@@ -1603,10 +1642,12 @@
 .ads.samsungads.com
 .ads.seccionamarilla.com.mx
 .ads.servebom.com
+.ads.servebom.com
 .ads.service.kugou.com
 .ads.sessiongames.com
 .ads.simpleads.com.br
 .ads.simpli.fi
+.ads.sina.com
 .ads.sina.com
 .ads.smaato.com
 .ads.smartstream.tv
@@ -1615,6 +1656,7 @@
 .ads.sonataplatform.com
 .ads.sonobi.com
 .ads.steelhousemedia.com
+.ads.stickyadstv.com
 .ads.stickyadstv.com
 .ads.storm8.com
 .ads.superawesome.tv
@@ -1626,6 +1668,7 @@
 .ads.tiki.vn
 .ads.traffichaus.com
 .ads.traffichunt.com
+.ads.trafficjunky.net
 .ads.trafficjunky.net
 .ads.tremorhub.com
 .ads.triongames.com
@@ -1656,11 +1699,14 @@
 .ads.xmlwizard.com
 .ads.yad2.co.il
 .ads.yahoo.com
+.ads.yahoo.com
 .ads.yahoo.de
 .ads.yam.com
 .ads.yap.yahoo.com
 .ads.yieldmo.com
 .ads.yimg.com
+.ads.yimg.com
+.ads.youtube.com
 .ads.youtube.com
 .ads.zaloapp.com
 .ads0.intentiq.com
@@ -1675,10 +1721,12 @@
 .ads2.greystripe.com
 .ads2.msads.net
 .ads2.msn.com
+.ads2.msn.com
 .ads2.servebom.com
 .ads20.adcolony.com
 .ads3-adnow.com
 .ads3.fingersoft.net
+.ads30.adcolony.com
 .ads30.adcolony.com
 .ads5-adnow.com
 .adsage.cn
@@ -1694,6 +1742,8 @@
 .adscan.yelabapp.com
 .adscaspion.appspot.com
 .adscdn.baidu.com
+.adscdn.baidu.com
+.adsclick.qq.com
 .adsclick.qq.com
 .adsclick.ru
 .adsco.re
@@ -1721,12 +1771,15 @@
 .adserver-qcmtc.adtechus.com
 .adserver-toy.adtechjp.com
 .adserver-us.adtech.advertising.com
+.adserver-us.adtech.advertising.com
 .adserver.adotmob.com
 .adserver.adreactor.com
 .adserver.adsmovil.com
 .adserver.adtech.advertising.com
 .adserver.adtech.de
+.adserver.adtech.de
 .adserver.adtechjp.com
+.adserver.adtechus.com
 .adserver.adtechus.com
 .adserver.aidameter.com
 .adserver.b2c.com
@@ -1758,6 +1811,8 @@
 .adserver.unityads.unity3d.com
 .adserver.videohub.tv
 .adserver.xpanama.net
+.adserver.xpanama.net
+.adserver.yahoo.com
 .adserver.yahoo.com
 .adserverams.adtech.de
 .adserversolutions.com
@@ -1765,6 +1820,7 @@
 .adservetx.media.net
 .adservex.media.net
 .adservice.google.co.jp
+.adservice.google.com
 .adservice.google.com
 .adservice.google.com.tr
 .adservice.google.com.vn
@@ -1778,9 +1834,14 @@
 .adservme.com
 .adservone.com
 .adsfile.qq.com
+.adsfile.qq.com
+.adsfs.oppomobile.com
 .adsfs.oppomobile.com
 .adsgroup.qq.com
+.adsgroup.qq.com
 .adshmct.qq.com
+.adshmct.qq.com
+.adshmmsg.qq.com
 .adshmmsg.qq.com
 .adshost1.com
 .adshost2.com
@@ -1790,6 +1851,8 @@
 .adskape.ru
 .adslot.uc.cn
 .adslvfile.qq.com
+.adslvfile.qq.com
+.adslvseed.qq.com
 .adslvseed.qq.com
 .adsmart.co.uk
 .adsmart.com
@@ -1817,7 +1880,9 @@
 .adspruce.com
 .adspynet.com
 .adsqqclick.qq.com
+.adsqqclick.qq.com
 .adsradios.adswizz.com
+.adsrich.qq.com
 .adsrich.qq.com
 .adsrocket.net
 .adsrvmedia.net
@@ -1831,21 +1896,26 @@
 .adstax-match.adrtx.net
 .adstest.weather.com
 .adstextview.qq.com
+.adstextview.qq.com
 .adstracker.appsgeyser.com
 .adstream.123.sogoucdn.com
 .adstune.com
 .adstxt.adnxs.com
 .adsunflower.com
+.adsunflower.com
 .adsupplyads.com
 .adsv2.autodaily.vn
 .adsvideo1.addealsnetwork.com
 .adsview.qq.com
+.adsview.qq.com
+.adsview2.qq.com
 .adsview2.qq.com
 .adsvstream-a930.kxcdn.com
 .adswitcher.com
 .adswizz.com
 .adsx.greystripe.com
 .adsymptotic.com
+.adsyndication.msn.com
 .adsyndication.msn.com
 .adsynergy.com
 .adt.xdrig.com
@@ -1950,7 +2020,9 @@
 .adx.admicro.vn
 .adx.adnxs.com
 .adx.ads.oppomobile.com
+.adx.ads.oppomobile.com
 .adx.callback.batmobi.net
+.adx.g.doubleclick.net
 .adx.g.doubleclick.net
 .adx.kul.vn
 .adx.lsosad.com
@@ -1984,6 +2056,7 @@
 .af-web.advertica-cdn.com
 .afa15.com.ne.kr
 .afadvantage.gov
+.afd.baidu.com
 .afd.baidu.com
 .afd.l.google.com
 .aff-a.advertica-cdn.com
@@ -2030,6 +2103,7 @@
 .agingstats.gov
 .agnes.scloud.lfengmobile.com
 .agoodm.m.taobao.com
+.agoodm.m.taobao.com
 .agsteier.com
 .aguacaliente-nsn.gov
 .ah-v1.presage.io
@@ -2040,6 +2114,8 @@
 .ai-personalization-prod-static.demandbase.com
 .ai.branch.io
 .ai.m.taobao.com
+.ai.m.taobao.com
+.ai.taobao.com
 .ai.taobao.com
 .ai.voiceads.cn
 .ai.yimg.jp
@@ -2074,7 +2150,6 @@
 .ak.p.openx.net
 .ak.sail-horizon.com
 .ak.sailthru.com
-.aka-apiservices.boostmobile.com
 .aka-cdn-ns.adtech.de
 .aka-cdn-ns.adtechus.com
 .aka-cdn.adtech.de
@@ -2148,6 +2223,7 @@
 .alissl.ucdl.pp.uc.cn
 .alissonluis-musico.sites.uol.com.br
 .alitui.weibo.com
+.alitui.weibo.com
 .aliunion.cn.yahoo.com
 .alivar.com.vn
 .alkutbay.starbolt.io
@@ -2171,8 +2247,11 @@
 .almontmichigan.gov
 .alog.umeng.co
 .alog.umeng.com
+.alog.umeng.com
+.alog.umengcloud.com
 .alog.umengcloud.com
 .alogs.umeng.com
+.alogs.umengcloud.com
 .alogs.umengcloud.com
 .alogsus.umeng.com
 .alogus.umeng.com
@@ -2183,6 +2262,7 @@
 .alpharetta-ga.gov
 .alpinecountyca.gov
 .als-svc.nytimes.com
+.als.baidu.com
 .als.baidu.com
 .alsenate.gov
 .alsoknowsit.com
@@ -2226,6 +2306,7 @@
 .ambient-platform.com
 .ambimob.com
 .ambulanciaslazaro.com
+.amdc.m.taobao.com
 .amdc.m.taobao.com
 .ameniany.gov
 .america.gov
@@ -2341,6 +2422,7 @@
 .an.facebook.com
 .an.m.liebao.cn
 .an.yandex.ru
+.an.yandex.ru
 .ana-ing.fabric.io
 .ana.biddingx.com
 .ana.masky.biddingx.com
@@ -2348,6 +2430,7 @@
 .anagogpoi.us-east-1.elasticbeanstalk.com
 .anagogreversegeocodingapi.us-east-1.elasticbeanstalk.com
 .analxxxclipsyjh.dnset.com
+.analy.qq.com
 .analy.qq.com
 .analysis.jedimobi.com
 .analysis.ligatus.com
@@ -2390,6 +2473,7 @@
 .analytics-v3.yinzcam.net
 .analytics-wildtangent-yfdbl8gzl.stackpathdns.com
 .analytics.163.com
+.analytics.ad.daum.net
 .analytics.ad.daum.net
 .analytics.adpost.org
 .analytics.adsertor.co.uk
@@ -2477,6 +2561,7 @@
 .analytics.shareaholic.com
 .analytics.siliconexpert.com
 .analytics.slashdotmedia.com
+.analytics.snssdk.com
 .analytics.snssdk.com
 .analytics.spotify.com
 .analytics.strangeloopnetworks.com
@@ -2576,7 +2661,6 @@
 .antiochtownship-il.gov
 .antiochtownshipil.gov
 .antivirus.baidu.com
-.anx.mindspark.com
 .anycast.adnxs.com
 .anycast.dt.adsafeprotected.com
 .anycast.fw.adsafeprotected.com
@@ -2595,6 +2679,7 @@
 .aorta.clickagy.com
 .aos.gop1.co
 .aos.opt8.co
+.aos.wall.youmi.net
 .aos.wall.youmi.net
 .ap-central.load.exelator.com
 .ap-northeast.load.exelator.com
@@ -2636,7 +2721,6 @@
 .api-flow.flyme.cn
 .api-gateway.us-west-2.elasticbeanstalk.com
 .api-gdpr.voodoo-tech.io
-.api-grpc.lightstep.com
 .api-log-analytics.cloud.toast.com
 .api-log.immomo.com
 .api-logsink-prod.zedge.io
@@ -2666,6 +2750,7 @@
 .api.ad.smaato.net
 .api.ad.wazzapps.org
 .api.ad.xiaomi.com
+.api.ad.xiaomi.com
 .api.ad4push.com
 .api.adbecrsl.com
 .api.adbro.me
@@ -2684,12 +2769,14 @@
 .api.adskeeper.co.uk
 .api.adsnative.com
 .api.adsymptotic.com
+.api.adsymptotic.com
 .api.adthor.com
 .api.adtimaserver.vn
 .api.adtrade.com
 .api.advista.no
 .api.adzmedia.com
 .api.agoda.com.edgekey.net
+.api.airpush.com
 .api.airpush.com
 .api.alphonso.tv
 .api.altamob.com
@@ -2713,6 +2800,7 @@
 .api.appodeal.com
 .api.appodealx.com
 .api.appota.com
+.api.apps.sina.cn
 .api.apps.sina.cn
 .api.appsee.com
 .api.appsflyer.com
@@ -2741,7 +2829,6 @@
 .api.branch.io
 .api.brandify.com
 .api.bttrack.com
-.api.bufferapp.com
 .api.bugfender.com
 .api.bugly.qq.com
 .api.bugsee.com
@@ -2757,6 +2844,7 @@
 .api.connecto.io
 .api.content.ad
 .api.cpu.baidu.com
+.api.cpu.baidu.com
 .api.crashlytics.com
 .api.crispadvertising.com
 .api.crittercism.com
@@ -2768,6 +2856,7 @@
 .api.demandbase.com
 .api.destinationrewards.com
 .api.domob.cn
+.api.doumob.com
 .api.doumob.com
 .api.dreamfull.cn
 .api.dsp.batmobi.net
@@ -2848,12 +2937,12 @@
 .api.mobileapptracking.com
 .api.mobilearts.io
 .api.mobilebridge.com
-.api.mobileday.com
 .api.mobilewareinc.com
 .api.mobitech-content.xyz
 .api.moblink.mob.com
 .api.mobpowertech.com
 .api.mobula.ds.duapps.com
+.api.mobula.sdk.duapps.com
 .api.mobula.sdk.duapps.com
 .api.moengage.com
 .api.monetate.net
@@ -2923,6 +3012,7 @@
 .api.segment.io
 .api.sentiance.com
 .api.share.baidu.com
+.api.share.baidu.com
 .api.share.mob.com
 .api.shuaji.360.cn
 .api.siftscience.com
@@ -2968,7 +3058,6 @@
 .api.vineapp.com
 .api.visicom.ua
 .api.voiceads.cn
-.api.vsee.com
 .api.vungle.akadns.net
 .api.vungle.com
 .api.vungle.com.edgekey.net
@@ -2979,6 +3068,7 @@
 .api.wonderpush.com
 .api.wootric.com
 .api.wootric.com.herokudns.com
+.api.wsq.umeng.com
 .api.wsq.umeng.com
 .api.xdirectx.com
 .api.yieldlove-ad-serving.net
@@ -3040,6 +3130,7 @@
 .apnjp.c.appier.net
 .apns.ios.ijinshan.com
 .apnx-match.dotomi.com
+.apoll.m.taobao.com
 .apoll.m.taobao.com
 .apollo.lvs.dupont.com
 .apollo.tsicable.com
@@ -3164,7 +3255,6 @@
 .app.masoffer.net
 .app.matheranalytics.com
 .app.meltwater.com
-.app.mobilecause.com
 .app.mopub.com
 .app.netpark.us
 .app.networkad.net
@@ -3206,7 +3296,6 @@
 .appclick.net
 .appclick.rqmob.com
 .appconfig.cmgdigital.com
-.appcontent.boostmobile.com
 .appdeumext.tdameritrade.com
 .appdiscovery.apptap.com
 .appdog.com
@@ -3233,6 +3322,7 @@
 .appload.ingest.crittercism.com
 .appload.ingest.eu.crittercism.com
 .applog.camera360.com
+.applog.uc.cn
 .applog.uc.cn
 .applogios.uc.cn
 .applovin-asia-rtb.liftoff.io
@@ -3277,6 +3367,7 @@
 .apps.shareaholic.com
 .apps2.outfit7.com
 .appsbeta.pubmatic.com
+.appsdk.tanv.com
 .appsdk.tanv.com
 .appsdt.com
 .appserver-ap.com
@@ -3338,6 +3429,7 @@
 .appult.fuse-ad.com
 .appvast.adsafeprotected.com
 .appwall.api.airpush.com
+.appwall.api.airpush.com
 .appwall.tv2phone.cn
 .apr.lijit.com
 .aps.insight.adsrvr.org
@@ -3374,7 +3466,6 @@
 .arc.gov
 .arcadia-fl.gov
 .arcadiaca.gov
-.arcgis.mobile311.com
 .archbaldboroughpa.gov
 .archdale-nc.gov
 .archive.adjust.io
@@ -3424,7 +3515,6 @@
 .artsconsortium.org
 .as-dmpsync.3lift.com
 .as-eb2.3lift.com
-.as-p-e.jitterbit.com
 .as-sec.casalemedia.com
 .as-tlx.3lift.com
 .as-v1.presage.io
@@ -3498,7 +3588,6 @@
 .assets.chartboost.com
 .assets.deployads.com
 .assets.dwell.com
-.assets.dynatrace.com
 .assets.foxmetrics.com
 .assets.iterable.com
 .assets.kampyle.com
@@ -3520,6 +3609,7 @@
 .associatesexports.com
 .assp.sohu.com
 .astat.bugly.qq.com
+.astat.bugly.qq.com
 .asterix.net.uoguelph.ca
 .asth.innity.com
 .astrategy.beacon.qq.com
@@ -3527,6 +3617,7 @@
 .async01.admantx.com
 .at-gmtdmp.mookie1.com
 .at.atwola.com
+.at.umeng.com
 .at.umeng.com
 .atanx.alicdn.com
 .atanx2.alicdn.com
@@ -3574,6 +3665,7 @@
 .au.umeng.co
 .au.umeng.com
 .au.w.inmobi.com
+.au.youmi.net
 .au.youmi.net
 .aubreytx.gov
 .auburnmaine.gov
@@ -3881,6 +3973,7 @@
 .b.admost.com
 .b.adnxs.com
 .b.ads1.msn.com
+.b.ads1.msn.com
 .b.ads2.msn.com
 .b.appjiagu.com
 .b.baidu.com
@@ -3948,8 +4041,10 @@
 .backup.aatkit.com
 .backup.uninet.com.cn
 .badad.googleplex.com
+.badad.googleplex.com
 .badenpa.gov
 .badriver-nsn.gov
+.baichuan.baidu.com
 .baichuan.baidu.com
 .baidu.greenxf.cn
 .baidu1.weather.com.cn
@@ -4003,6 +4098,7 @@
 .banners.isoftmarketing.com
 .banners.itunes.apple.com
 .banners.klm.com.edgekey.net
+.banners.mellowads.com
 .banners.mellowads.com
 .banners.mobile.yandex.net
 .banners.popads.net
@@ -4065,6 +4161,7 @@
 .bccirclk.gov
 .bcdn-god.we-stats.com
 .bce.baidu.com
+.bce.baidu.com
 .bcfads.com
 .bcfp.gov
 .bcjjg.bugsevent.com
@@ -4091,14 +4188,17 @@
 .bd3.idgdmgroup.com.cn
 .bd4.idgdmgroup.com.cn
 .bdapi.ads.oppomobile.com
+.bdapi.ads.oppomobile.com
 .bdd.hainan.net
 .bddm.999d.com
 .bde.be
 .bdg-analytics.appspot.com
 .bdimg.share.baidu.com
+.bdimg.share.baidu.com
 .bdjs.999d.com
 .bdjs.guangyuanol.cn
 .bdjsym.guangyuanol.cn
+.bdplus.baidu.com
 .bdplus.baidu.com
 .bds.hainan.net
 .bdsp.x.jd.com
@@ -4150,11 +4250,13 @@
 .beacon.securestudies.com.edgekey.net
 .beacon.shazam.com
 .beacon.sina.com.cn
+.beacon.sina.com.cn
 .beacon.sojern.com
 .beacon.sparta.mig.tencent-cloud.net
 .beacon.statful.com
 .beacon.tapfiliate.com
 .beacon.tfgco.com
+.beacon.tingyun.com
 .beacon.tingyun.com
 .beacon.tru.am
 .beacon.us-east-1.prodaa.netflix.com
@@ -4169,6 +4271,7 @@
 .beacons.mediamelon.com
 .beacontest.cardlytics.com
 .bead-ad.com
+.beap-bc.yahoo.com
 .beap-bc.yahoo.com
 .beap.adss.yahoo.com
 .beap.gemini.yahoo.com
@@ -4199,6 +4302,7 @@
 .befoodsafe.gov
 .bega-dc.gov
 .begonia.uib.no
+.beha.ksmobile.com
 .beha.ksmobile.com
 .behacdn.ksmobile.net
 .behaviad.net
@@ -4271,14 +4375,17 @@
 .bgl1pp1-a-fixed.sancharnet.in
 .bgrndi.com
 .bh.contextweb.com
+.bh.contextweb.com
 .bhclicks.com
 .bhmedia-tagan.adlightning.com
 .bi-analytics.cloudapp.net
 .bia.gov
 .bid-east.intentiq.com
 .bid.adview.cn
+.bid.adview.cn
 .bid.adview.com
 .bid.contextweb.com
+.bid.g.doubleclick.net
 .bid.g.doubleclick.net
 .bid.integral-marketing.com
 .bid.intentiq.com
@@ -4324,6 +4431,7 @@
 .billytesting.com
 .bima.weathercn.com
 .bimlocal.com
+.bingads.microsoft.com
 .bingads.microsoft.com
 .binghamton-ny.gov
 .bioeco.gov
@@ -4490,11 +4598,7 @@
 .bouldercolorado.gov
 .bouldercounty-co.gov
 .bouldercountycolorado.gov
-.bounce-mx.exacttarget.com
 .bounce.emxdgt.com
-.bounce.exacttarget.com
-.bounce.s10.exacttarget.com
-.bounce.s7.exacttarget.com
 .bountifulutah.gov
 .bourbon-in.gov
 .bow-nh.gov
@@ -4520,7 +4624,6 @@
 .br.ads.justpremium.com
 .br.adspecs.yahoo.com
 .br.com.tapps.analytics.s3.amazonaws.com
-.br.mobilelifeconnect.com
 .br.newrelic.com
 .brac.gov
 .bracbetul.com
@@ -4536,7 +4639,6 @@
 .branch.io
 .branchcountymi.gov
 .brand.sogou.com
-.brandcdn.exacttarget.com
 .brandcolorado.gov
 .branding.api.us.apiconnect.ibmcloud.com
 .branding.taboola.com
@@ -4637,6 +4739,7 @@
 .bt4.rutracker.cc
 .btf-analytics.s3.amazonaws.com
 .btlaunch.baidu.com
+.btlaunch.baidu.com
 .btlr.sharethrough.com
 .bto.gov
 .btrll.com
@@ -4718,12 +4821,14 @@
 .bypass.jp
 .bzclk.baidu.com
 .c-adash.m.taobao.com
+.c-adash.m.taobao.com
 .c-betrad-com.cdn.ampproject.org
 .c-evt.moatads.com
 .c.35kds.com
 .c.ad-srv.co
 .c.adexchangemachine.com
 .c.admaster.com.cn
+.c.admob.com
 .c.admob.com
 .c.adsco.re
 .c.adsymptotic.com
@@ -4732,10 +4837,12 @@
 .c.algovid.com
 .c.alimama.com
 .c.amazon-adsystem.com
+.c.amazon-adsystem.com
 .c.appjiagu.com
 .c.apptrk.io
 .c.atdmt.com
 .c.baidu.com
+.c.betrad.com
 .c.betrad.com
 .c.biz.weibo.com
 .c.bxb.oupeng.com
@@ -4751,6 +4858,7 @@
 .c.dns.tds.net
 .c.domob.cn
 .c.evidon.com
+.c.evidon.com
 .c.fqtag.com
 .c.gdt.qq.com
 .c.go-mpulse.net
@@ -4761,6 +4869,7 @@
 .c.jsrdn.com
 .c.ktxtr.com
 .c.kuwo.cn
+.c.l.qq.com
 .c.l.qq.com
 .c.lentainform.com
 .c.lytics.io
@@ -4792,14 +4901,18 @@
 .c0.ifengimg.com
 .c00162-dl.urbanairship.com
 .c1.adform.net
+.c1.adform.net
 .c1.atdmt.com
 .c1.hadarone.com
 .c1.ifengimg.com
 .c1.minisplat.cn
 .c1.popads.net
+.c1.popads.net
 .c1exchange.com
 .c2.hadarone.com
 .c2.l.qq.com
+.c2.l.qq.com
+.c2.popads.net
 .c2.popads.net
 .c2.taboola.com
 .c2i-cdn.startappnetwork.com
@@ -4981,6 +5094,7 @@
 .cb-cdn.com
 .cb.alimama.cn
 .cb.baidu.com
+.cb.baidu.com
 .cb.ksmobile.com
 .cb.l.qq.com
 .cb.mopub.com
@@ -4989,6 +5103,7 @@
 .cbcnewmedia.pushwoosh.com
 .cben1.net
 .cbi-epa.gov
+.cbjs.baidu.com
 .cbjs.baidu.com
 .cbmall.com
 .cbo.gov
@@ -5089,10 +5204,12 @@
 .cdn.88-f.net
 .cdn.accengage.com
 .cdn.ad.xiaomi.com
+.cdn.ad.xiaomi.com
 .cdn.adacado.com
 .cdn.adbro.me
 .cdn.adligature.com
 .cdn.admarvel.com
+.cdn.adnxs.com
 .cdn.adnxs.com
 .cdn.adpushup.com
 .cdn.adrta.com
@@ -5137,6 +5254,7 @@
 .cdn.blueconic.net
 .cdn.boomtrain.com
 .cdn.branch.io
+.cdn.branch.io
 .cdn.caprofitx.com
 .cdn.carbonads.com
 .cdn.celtra.com
@@ -5146,7 +5264,6 @@
 .cdn.coinad.com
 .cdn.comedia.coccoc.com
 .cdn.concert.io
-.cdn.cookielaw.org
 .cdn.creative.medialytics.com
 .cdn.crwdcntrl.net
 .cdn.curalate.com
@@ -5163,6 +5280,7 @@
 .cdn.earnify.com
 .cdn.exelator.com
 .cdn.fastclick.net
+.cdn.flurry.com
 .cdn.flurry.com
 .cdn.fotoable.com
 .cdn.fqtag.com
@@ -5230,6 +5348,7 @@
 .cdn.perzonalization.com
 .cdn.platform.openx.com
 .cdn.popcash.net
+.cdn.popcash.net
 .cdn.popmyads.com
 .cdn.promotionengine.com
 .cdn.puata.info
@@ -5264,6 +5383,7 @@
 .cdn.tagcommander.com
 .cdn.tagular.com
 .cdn.tanx.com
+.cdn.tanx.com
 .cdn.taplytics.com
 .cdn.taptica.com
 .cdn.teads.tv
@@ -5273,7 +5393,6 @@
 .cdn.unityads.unity3d.com
 .cdn.vdopia.com
 .cdn.viglink.com
-.cdn.wootric.com
 .cdn.wpm.neustar.biz
 .cdn.zarget.com
 .cdn0.mobmore.com
@@ -5751,9 +5870,11 @@
 .click.atdmt.com
 .click.aztracking.net
 .click.bes.baidu.com
+.click.bes.baidu.com
 .click.e.juiceplus.com
 .click.fout.jp
 .click.gowadogo.com
+.click.hm.baidu.com
 .click.hm.baidu.com
 .click.howdoesin.net
 .click.jebe.renren.com
@@ -5771,6 +5892,7 @@
 .click.stat.hao.360.cn
 .click.stats-locations.com
 .click.tanx.com
+.click.tanx.com
 .click.tianyaui.com
 .click.tz.simba.taobao.com
 .click.union.ucweb.com
@@ -5782,6 +5904,7 @@
 .click2.yllix.com
 .click2forhz.adsmogo.com
 .click3forhz.adsmogo.com
+.clickc.admaster.com.cn
 .clickc.admaster.com.cn
 .clickcdn.shareaholic.com
 .clickfuse.com
@@ -5881,10 +6004,14 @@
 .cm-udmp.gridsumdissector.com
 .cm.adgrx.com
 .cm.adkmob.com
+.cm.adkmob.com
+.cm.admaster.com.cn
 .cm.admaster.com.cn
 .cm.adsafety.net
 .cm.adskeeper.co.uk
 .cm.baichuan.baidu.com
+.cm.baichuan.baidu.com
+.cm.baidu.com
 .cm.baidu.com
 .cm.cn.miaozhen.com
 .cm.crashlytics.com
@@ -5893,8 +6020,10 @@
 .cm.e.qq.com
 .cm.eyereturn.com
 .cm.g.doubleclick.net
+.cm.g.doubleclick.net
 .cm.gammaplatform.com
 .cm.imrworldwide.com
+.cm.ipinyou.com
 .cm.ipinyou.com
 .cm.jd.com
 .cm.l.qq.com
@@ -5904,8 +6033,10 @@
 .cm.mediav.com
 .cm.mgid.com
 .cm.netseer.com
+.cm.netseer.com
 .cm.p4p.cn.yahoo.com
 .cm.pinsightmedia.com
+.cm.pos.baidu.com
 .cm.pos.baidu.com
 .cm.revcontent.com
 .cm.send.microadinc.com
@@ -5935,6 +6066,8 @@
 .cms.lfstmedia.com
 .cms.mobileposse.com
 .cms.opendsp.tanx.com
+.cms.opendsp.tanx.com
+.cms.quantserve.com
 .cms.quantserve.com
 .cms.tanx.com
 .cmsdca.gov
@@ -5963,6 +6096,7 @@
 .cntv.wrating.com
 .cnvrsns.clickmeter.com
 .cnzz.mmstat.com
+.cnzz.mmstat.com
 .co-gmtdmp.mookie1.com
 .co.ads.justpremium.com
 .co.gov
@@ -5985,6 +6119,7 @@
 .code.revcontent.com
 .code3.adtlgc.com
 .codot.gov
+.coed-d.openx.net
 .coed-d.openx.net
 .cofeb13east.com
 .coffeehausblog.com
@@ -6110,8 +6245,6 @@
 .collector-010.newrelic.com
 .collector-6271.tvsquared.com
 .collector-a.perimeterx.net
-.collector-grpc.lightstep.com
-.collector-medium.lightstep.com
 .collector-pool.newrelic.com
 .collector-px8fcgygk4.perimeterx.net
 .collector-pxhyx10rg3.perimeterx.net
@@ -6125,7 +6258,6 @@
 .collector.effectivemeasure.net
 .collector.insight-stats.com
 .collector.leaddyno.com
-.collector.lightstep.com
 .collector.newrelic.com
 .collector.placelocal.com
 .collector.pyze.com
@@ -6237,6 +6369,7 @@
 .config.ad-brix.com
 .config.adsage.cn
 .config.adsage.com
+.config.adview.cn
 .config.adview.cn
 .config.analytics.anvato.net
 .config.appjolt.com
@@ -6473,6 +6606,7 @@
 .count8.51yes.com
 .count9.51yes.com
 .counter.kingsoft.com
+.counter.kingsoft.com
 .counter.ksosoft.com
 .counter.mgid.com
 .counter.sina.com.cn
@@ -6515,6 +6649,7 @@
 .cpmstar.com
 .cpnireporting.gov
 .cpro.baidu.com
+.cpro.baidu.com
 .cpro.baidustatic.com
 .cpro.tieba.baidu.com
 .cpro.zhidao.baidu.com
@@ -6523,6 +6658,7 @@
 .cpsc.gov
 .cpu-admin.baidu.com
 .cpu-baidu-com-block.cdn.bcebos.com
+.cpu.baidu.com
 .cpu.baidu.com
 .cpucdn.baidu.com
 .cpv.ty229.com
@@ -6534,13 +6670,6 @@
 .cr-p16.ladsp.com
 .cr.appsee.com
 .cr.m.liebao.cn
-.cr01.dynatrace.com
-.cr02.dynatrace.com
-.cr114.mta.exacttarget.com
-.cr144.mta.exacttarget.com
-.cr171.mta.exacttarget.com
-.cr71.mta.exacttarget.com
-.cr91.mta.exacttarget.com
 .crab.baidu.com
 .cracks.vg
 .crackspider.us
@@ -6635,6 +6764,7 @@
 .crow.suite224.net
 .crowd.fyber.com
 .crs.baidu.com
+.crs.baidu.com
 .crs.gov
 .crst-nsn.gov
 .crt2014-2024review.gov
@@ -6722,10 +6852,9 @@
 .cvis3.cvalley.net
 .cvr.ad-brix.com
 .cvt.mydas.mobi
-.cw23.mta.exacttarget.com
-.cw230.mta.exacttarget.com
 .cwc.gov
 .cwmgaming.com
+.cws-cctv.conviva.com
 .cws-cctv.conviva.com
 .cws-eu-west-1.conviva.com
 .cws-eu.conviva.com
@@ -6804,9 +6933,6 @@
 .d3.sina.com.cn
 .d3.sinaimg.cn
 .d31qbv1cthcecs.cloudfront.net
-.d365portal-prod-sdk.akstd.azureedge.net
-.d365portal-prod-sdk.azureedge.net
-.d365prod-sdk.azureedge.net
 .d36eyd5j1kt1m6.cloudfront.net
 .d3g.qq.com
 .d3kkw-6ch3c.ads.tremorhub.com
@@ -6881,6 +7007,7 @@
 .data.ad-score.com
 .data.adroll.com
 .data.ads.oppomobile.com
+.data.ads.oppomobile.com
 .data.adsrvr.org
 .data.adxcel-ec2.com
 .data.agkn.com
@@ -6889,6 +7016,7 @@
 .data.appsgeyser.com
 .data.axonix.com
 .data.coremetrics.com
+.data.flurry.com
 .data.flurry.com
 .data.gov
 .data.iappmobi.com
@@ -6999,6 +7127,7 @@
 .datas08.adlooxtracking.com
 .datas09.adlooxtracking.com
 .datas10.adlooxtracking.com
+.datax.baidu.com
 .datax.baidu.com
 .dataxu.com
 .dating.mgid.com
@@ -7232,10 +7361,6 @@
 .dextermi.gov
 .df.tanx.com
 .df.telemetry.microsoft.com
-.df12.mta.exacttarget.com
-.df140.mta.exacttarget.com
-.df177.mta.exacttarget.com
-.df57.mta.exacttarget.com
 .dfafacts.gov
 .dfc1.benbaisteel.com
 .dfdsseaways.blueconic.com
@@ -7244,7 +7369,6 @@
 .dfp.doubleclick.net
 .dfp.suning.com
 .dfs.digitalaccess.ru
-.dg7.mta.exacttarget.com
 .dh.holaworld.cn
 .dh.serving-sys.com
 .dhawk.parrable.com
@@ -7336,6 +7460,7 @@
 .dispawsusva.inmoment.com
 .display.360totalsecurity.com
 .display.ad.daum.net
+.display.ad.daum.net
 .display.adhudong.com
 .display.apester.com
 .display.bfmio.com
@@ -7345,6 +7470,7 @@
 .display.xad.com
 .displayads-formats.googleusercontent.com
 .disqus-d.openx.net
+.disqusads.com
 .disqusads.com
 .distracteddriving.gov
 .distractify-d.openx.net
@@ -7363,6 +7489,7 @@
 .dl-vip.pcfaster.baidu.co.th
 .dl.9xu.com
 .dl.client.baidu.com
+.dl.cm.ksmobile.com
 .dl.cm.ksmobile.com
 .dl.conviva.com
 .dl.downf468.com
@@ -7883,6 +8010,7 @@
 .dolphin.deliver.ifeng.com
 .dominations.analytics.nexonm.com
 .domob.cn
+.domob.cn
 .domob.com.cn
 .domob.org
 .domobcdn.com
@@ -7939,6 +8067,7 @@
 .dp-medien.eu
 .dp-sync.dotomi.com
 .dp.559.cc
+.dp.g.doubleclick.net
 .dp.g.doubleclick.net
 .dp.im.weibo.cn
 .dp3.qq.com
@@ -8007,6 +8136,8 @@
 .dsp.pro.cn
 .dsp.send.microadinc.com
 .dsp.simba.taobao.com
+.dsp.simba.taobao.com
+.dsp.youdao.com
 .dsp.youdao.com
 .dsp2-adserver.videohub.tv
 .dspcluster.adfarm1.adition.com
@@ -8018,6 +8149,7 @@
 .dsum-sec.casalemedia.com
 .dsum.casalemedia.com
 .dsv2-lifebuzz-d.openx.net
+.dt.adsafeprotected.com
 .dt.adsafeprotected.com
 .dtc.delidatax.com
 .dtnads-d.openx.net
@@ -8081,6 +8213,7 @@
 .dxbns1.duhosting.ae
 .dxbns2.duhosting.ae
 .dxp.baidu.com
+.dxp.baidu.com
 .dxprla.m.qxs.la
 .dyersburgtn.gov
 .dyn-beacon.akamaized.net
@@ -8091,11 +8224,11 @@
 .dynamic.adcrowd.com
 .dynamic.criteo.com
 .dynamicyield.com
-.dynatrace.com
 .dync.c.appier.net
 .dync2.c.appier.net
 .dyndns.oni.pt
 .dyntrk.com
+.dzl.baidu.com
 .dzl.baidu.com
 .e-adimages.scrippsnetworks.com
 .e-eihq01.eis.ernet.in
@@ -8110,9 +8243,11 @@
 .e-v2.presage.io
 .e-vcdn.anthill.vn
 .e.ad.xiaomi.com
+.e.ad.xiaomi.com
 .e.adhaven.com
 .e.admob.com
 .e.apsalar.com
+.e.baidu.com
 .e.baidu.com
 .e.cn.miaozhen.com
 .e.crashlytics.com
@@ -8122,6 +8257,7 @@
 .e.dns.kr
 .e.dns.tds.net
 .e.domob.cn
+.e.domob.cn
 .e.domob.com.cn
 .e.emgwq.com
 .e.hellomingpian.com
@@ -8130,6 +8266,7 @@
 .e.ligatus.com
 .e.logrocket.com
 .e.predictvideo.com
+.e.qq.com
 .e.qq.com
 .e.romgv.com
 .e.usa.events.netseer.com
@@ -8210,6 +8347,7 @@
 .echoa.randbinternationaltravel.com
 .echofonads.appspot.com
 .eclick.baidu.com
+.eclick.baidu.com
 .eclickz.com
 .eclipse.cablenet.com.ni
 .eclkmpsa.com
@@ -8287,6 +8425,7 @@
 .eisenhowermemorial.gov
 .eisgatewaypacificwa.gov
 .eiv.baidu.com
+.eiv.baidu.com
 .ejs.moatads.com
 .ejzr.golden1.sogou.com
 .eklutna-nsn.gov
@@ -8338,7 +8477,6 @@
 .embed.tempest-identity.prod.saymedia.com
 .embeds.tagboard.com.herokudns.com
 .emea-v3.tracking.justpremium.com
-.emea-west.jitterbit.com
 .emediate.se
 .emeraldbay-tx.gov
 .emergency-federal-register.gov
@@ -8435,6 +8573,7 @@
 .engageya.com
 .engine-dsa.fyber.com
 .engine.adzerk.net
+.engine.adzerk.net
 .engine.carbonads.com
 .engine.fyber.com
 .engine.liveintercept.com
@@ -8458,6 +8597,7 @@
 .entitlements.jwplayer.com
 .entree.igetget.com
 .entry.adsage.com
+.entry.baidu.com
 .entry.baidu.com
 .eol1.egyptonline.com
 .eop.gov
@@ -8499,6 +8639,7 @@
 .errors.inmoment.com
 .errp.gov
 .ers.baidu.com
+.ers.baidu.com
 .erulus.iad-03.braze.com
 .erupt.fernetmoretti.com.ar
 .es-gmtdmp.mookie1.com
@@ -8516,7 +8657,6 @@
 .espanolforlawenforcement.gov
 .espdesign.com.au
 .espn.hb.omtrdc.net
-.esri.mobile311.com
 .esrs.gov
 .essexct.gov
 .estoa.frost-electric-supply.com
@@ -8541,6 +8681,7 @@
 .etg.qq.com
 .ethics.gov
 .ethicsburg.gov
+.etl.xlmc.sandai.net
 .etl.xlmc.sandai.net
 .etl.xlmc.sec.miui.com
 .eton-ga.gov
@@ -8583,7 +8724,6 @@
 .euapi.ibm.xtify.com
 .euasync01.admantx.com
 .eugene-or.gov
-.eula.mindspark.com
 .eulesstx.gov
 .eur-ukp.adsrvr.org
 .eur1r.nipr.mil
@@ -8677,6 +8817,8 @@
 .events.zaloapp.com
 .events2-us-east-1.ipredictive.com
 .events3.adcolony.com
+.events3.adcolony.com
+.events3alt.adcolony.com
 .events3alt.adcolony.com
 .eventss3.cloud.datasphere.com
 .eventss3.datasphere.com
@@ -8701,6 +8843,7 @@
 .ex.qq.com
 .ex.tanx.com
 .ex.technor.com
+.ex.umengcloud.com
 .ex.umengcloud.com
 .exacttargetapis.com
 .example.lentainform.com
@@ -8764,6 +8907,7 @@
 .f04s03.cac.psu.edu
 .f1.luoshenbest.cn
 .f1.p0y.cn
+.f1.p0y.cn
 .f11.adventori.com
 .f12.adventori.com
 .f13.adventori.com
@@ -8775,6 +8919,7 @@
 .f19.adventori.com
 .f1odns01.bosai.go.jp
 .f1odns02.bosai.go.jp
+.f2.p0y.cn
 .f2.p0y.cn
 .f20.adventori.com
 .f21.adventori.com
@@ -8871,6 +9016,7 @@
 .fca.gov
 .fcanafta.tt.omtrdc.net
 .fcanr.tracking.miui.com
+.fcanr.tracking.miui.com
 .fcc.gov
 .fccuniversity.gov
 .fcd.autoads.asia
@@ -8943,6 +9089,7 @@
 .fedvte-fsi.gov
 .feed.adnow.com
 .feed.baidu.com
+.feed.baidu.com
 .feed.theta.sogou.com
 .feedback.whalecloud.com
 .feedfetch.c.appier.net
@@ -8959,6 +9106,7 @@
 .fetch.yourblocksite.com
 .fetishfitnessbabes.com
 .fetishlocator.com
+.fexclick.baidu.com
 .fexclick.baidu.com
 .ffcdn3.featureforward.com
 .ffcdn4.featureforward.com
@@ -8984,6 +9132,7 @@
 .filecdn2.ad.dotandad.com
 .filelocal-wa.gov
 .files-eu.clickdimensions.com
+.files.adform.net
 .files.adform.net
 .files.appsgeyser.com
 .files.clickdimensions.com
@@ -9112,10 +9261,12 @@
 .fluentmobile.com
 .fluid-adverts.localstars.com
 .flurry.cachefly.net
+.flurry.cachefly.net
 .flurry.com
 .flwg.gov
 .fm.cnbc.com
 .fm.duokanbox.com
+.fm.ipinyou.com
 .fm.ipinyou.com
 .fm.p0y.cn
 .fm.qzone.qq.com
@@ -9124,6 +9275,7 @@
 .fmi.gov
 .fmip.gov
 .fmpub.net
+.fms.ipinyou.com
 .fms.ipinyou.com
 .fmshrc.gov
 .fmtu.mt.ns.els-gms.att.net
@@ -9135,12 +9287,17 @@
 .focusdl.punchh.com
 .focusios.punchh.com
 .fodder.qq.com
+.fodder.qq.com
+.fodder.tc.qq.com
 .fodder.tc.qq.com
 .foia-dc.gov
 .foia.gov
 .foiaxpress-dc.gov
 .folder.adfuture.cn
+.folder.adfuture.cn
 .folder.adsunflower.com
+.folder.adsunflower.com
+.folder.advmob.cn
 .folder.advmob.cn
 .fondazioneciampi.org
 .fonts.tinypass.com
@@ -9185,6 +9342,7 @@
 .fota.advmob.cn
 .fota4.adfuture.cn
 .fota4.adups.cn
+.fota4.adups.cn
 .fota4hw.adsunflower.com
 .fota5.adups.cn
 .fota5.adups.com
@@ -9195,6 +9353,7 @@
 .fota5t.adups.cn
 .fota5t.adups.com
 .fota5tbk.adups.com
+.fotacontrol.adfuture.cn
 .fotacontrol.adfuture.cn
 .fotolog.crwdcntrl.net
 .fourthgate.org
@@ -9331,6 +9490,7 @@
 .fultoncountyny.gov
 .fun-adx.admaster.com.cn
 .fun.adx.admaster.com.cn
+.fun.adx.admaster.com.cn
 .funchill.com
 .fundingchoices.google.com
 .funkucck.bluerobot.cl
@@ -9341,8 +9501,10 @@
 .fvalid.appsflyer.com
 .fvap.gov
 .fw.adsafeprotected.com
+.fw.adsafeprotected.com
 .fw.moatads.com
 .fw.posam.cz
+.fw.qq.com
 .fw.qq.com
 .fw433.npic.ac.cn
 .fwapi.adsafeprotected.com
@@ -9359,7 +9521,9 @@
 .g.3gl.net
 .g.admedia.com
 .g.adnxs.com
+.g.adnxs.com
 .g.atdmt.com
+.g.baidu.com
 .g.baidu.com
 .g.c.appier.net
 .g.cn.miaozhen.com
@@ -9372,6 +9536,7 @@
 .g.haluoha.com
 .g.jp.miaozhen.com
 .g.jwpsrv.com
+.g.koowo.com
 .g.koowo.com
 .g.kuwo.cn
 .g.opt8.co
@@ -9415,6 +9580,7 @@
 .galvatron.iad.appboy.com
 .galvestoncountytx.gov
 .gam.adnxs.com
+.gam.adnxs.com
 .gama.baydenet.com.br
 .gambero3.cs.tin.it
 .game.adwo.com
@@ -9423,6 +9589,7 @@
 .game.immomo.com
 .game.subway.uu.cc
 .game.weibo.cn
+.game.weibo.com
 .game.weibo.com
 .gamead.swjoy.com
 .gameanalysis.chartboosts.com
@@ -9495,6 +9662,7 @@
 .geil.alon3.tk
 .gem.gbc.criteo.com
 .gemini.yahoo.com
+.gemini.yahoo.com
 .gemius.pl
 .gen.alicdn.com
 .genbank.gov
@@ -9509,6 +9677,7 @@
 .geo.celtra.com
 .geo.gop1.co
 .geo.ipromote.com
+.geo.moatads.com
 .geo.moatads.com
 .geo.opt8.co
 .geo.query.yahoo.com
@@ -9527,7 +9696,6 @@
 .geoip.goforandroid.com
 .geoip.ifunny.co
 .geoip.propellerads.com
-.geolocation.onetrust.com
 .geomac.gov
 .geoplatform.gov
 .geoplugin.net
@@ -9583,6 +9751,7 @@
 .gillettewy.gov
 .gilmercounty-ga.gov
 .gilmercountywv.gov
+.gimg.baidu.com
 .gimg.baidu.com
 .ginf.adfurikun.jp
 .ginniemae.gov
@@ -9640,6 +9809,8 @@
 .glumbert.crwdcntrl.net
 .glynncounty-ga.gov
 .gm.mmstat.com
+.gm.mmstat.com
+.gma.alicdn.com
 .gma.alicdn.com
 .gmads.mookie1.com
 .gmossp-sp.jp
@@ -9658,6 +9829,7 @@
 .go.fullstory.com
 .go.localytics.com
 .go.mmstat.com
+.go.mmstat.com
 .go.mobisla.com
 .go.mobpartner.mobi
 .go.mobstitial.com
@@ -9668,6 +9840,7 @@
 .go.optimizely.com
 .go.padsdel.com
 .go.padstm.com
+.go.pub2srv.com
 .go.pub2srv.com
 .go.pushnative.com
 .go.shareaholic.com
@@ -9705,9 +9878,11 @@
 .goodyearaz.gov
 .goog.applovin.com
 .googleads.g.doubleclick.net
+.googleads.g.doubleclick.net
 .googleads2.g.doubleclick.net
 .googleads4.g.doubleclick.net
 .googleadservices.co.uk
+.googleadservices.com
 .googleadservices.com
 .googleadservices.org
 .googleadservices.ru
@@ -9716,6 +9891,8 @@
 .googlecommerce.com
 .googlesyndication.com
 .googletagmanager.com
+.googletagmanager.com
+.googletagservices.com
 .googletagservices.com
 .gop.gov
 .gop1.co
@@ -9843,6 +10020,7 @@
 .gsns.gscas.ac.cn
 .gsp0.baidu.com
 .gsp1.baidu.com
+.gsp1.baidu.com
 .gsp2.baidu.com
 .gsp3.baidu.com
 .gtag.yieldoptimizer.com
@@ -9916,6 +10094,7 @@
 .gwmserver.com
 .gws.captifymedia.com
 .gwx.adlibr.com
+.gxb.mmstat.com
 .gxb.mmstat.com
 .gxe.husky.sogou.com
 .gyboo.cruisingsmallship.com
@@ -10192,7 +10371,10 @@
 .hlog.hiido.com
 .hlrcv.stage.adobe.com
 .hm.baidu.com
+.hm.baidu.com
 .hm.l.qq.com
+.hm.l.qq.com
+.hmma.baidu.com
 .hmma.baidu.com
 .hmora.fred-build.tk
 .hn.inspectlet.com
@@ -10290,6 +10472,7 @@
 .hpca.gov
 .hpcsos.col.hp.com
 .hpd.baidu.com
+.hpd.baidu.com
 .hpr.outbrain.com
 .hq.appsflyer.com
 .hq1.appsflyer.com
@@ -10317,6 +10500,7 @@
 .html5adkit.plusmo.s3.amazonaws.com
 .httpdns.push.oppomobile.com
 .httpkafka.unityads.unity3d.com
+.httpring.qq.com
 .httpring.qq.com
 .hu-gmtdmp.mookie1.com
 .huachucacityaz.gov
@@ -10369,11 +10553,13 @@
 .hybird.rayjump.com
 .hydecountync.gov
 .hydra.alibaba.com
+.hydra.alibaba.com
 .hydra.comcare.gov.au
 .hydraulicpowerpack.com
 .hydrogen.gov
 .hyfh.benbaisteel.com
 .hyperadx.com
+.hz.mmstat.com
 .hz.mmstat.com
 .i-cdn.openx.com
 .i-cdn.servedbyopenx.com
@@ -10429,6 +10615,7 @@
 .i.w.inmobi.com
 .i.w.vip.ams1.inmobi.com
 .i.w55c.net
+.i.w55c.net
 .i1.go2yd.com
 .i1.services.social.microsoft.com
 .i1.services.social.microsoft.com.nsatc.net
@@ -10448,6 +10635,7 @@
 .iad-2-xcp.go.sonobi.com
 .iad-2.go.sonobi.com
 .iad-usadmm.dotomi.com
+.iad.g.163.com
 .iad.g.163.com
 .iad.gov
 .iad01-login-ds.dotomi.com
@@ -10518,6 +10706,7 @@
 .iad7.ipromote.com
 .iad8.ipromote.com
 .iadctest.qwapi.com
+.iadctest.qwapi.com
 .iadmoo.apple.com
 .iadnet.com
 .iadsdk.apple.com
@@ -10541,6 +10730,7 @@
 .iawg.gov
 .ib.3lift.com
 .ib.adnxs.com
+.ib.adnxs.com
 .ib.anycast.adnxs.com
 .ib.mookie1.com
 .ib.snssdk.com.edgekey.net
@@ -10563,6 +10753,7 @@
 .ichannel-tb.isnssdk.com
 .ichannel.isnssdk.com
 .icjointduty.gov
+.iclick.cm.admaster.com.cn
 .iclick.cm.admaster.com.cn
 .iclickyou.com
 .icm-tracking.meltwater.com
@@ -10595,6 +10786,8 @@
 .idguk1-d.openx.net
 .idigger.allyes.com
 .idm-su.baidu.com
+.idm-su.baidu.com
+.idm.bce.baidu.com
 .idm.bce.baidu.com
 .idmanagement.gov
 .idot.cz
@@ -10672,7 +10865,6 @@
 .image.moengage.com
 .image.p4p.sogou.com
 .image.richrelevance.com
-.image.s7.exacttarget.com
 .image.zcoup.com
 .image.zzd.sm.cn
 .image2.pubmatic.com
@@ -10716,10 +10908,9 @@
 .imagesrv.adition.com
 .imagess.cloud.datasphere.com
 .imagzine.oppomobile.com
-.imapi-mu.isnssdk.com
-.imapi-sg.isnssdk.com
 .imatmobile.com
 .imb-offerwall-env.us-east-1.elasticbeanstalk.com
+.imc.l.qq.com
 .imc.l.qq.com
 .imces.dfw1.vip.inmobi.com
 .imces.inmobi.com
@@ -10824,6 +11015,7 @@
 .imp.go.sohu.com
 .imp.nanigans.com
 .imp.optaim.com
+.imp.optaim.com
 .imp.sdkclick.com
 .imp.startappservice.com
 .imp.voiceads.cn
@@ -10882,15 +11074,6 @@
 .inapps.appsflyer.com
 .inapps.moengage.com
 .inari.iad-03.braze.com
-.inbound-reply.s1.exacttarget.com
-.inbound-reply.s4.exacttarget.com
-.inbound-reply.s6.exacttarget.com
-.inbound-reply.s7.exacttarget.com
-.inbound.s1.exacttarget.com
-.inbound.s4.exacttarget.com
-.inbound.s5.exacttarget.com
-.inbound.s6.exacttarget.com
-.inbound.s7.exacttarget.com
 .inclinevillage-nv.gov
 .inclk.com
 .inclusivediversity.co.uk
@@ -11145,6 +11328,7 @@
 .ipinvite.iperceptions.com
 .ipinyou.cm.admaster.com.cn
 .ipinyou.com
+.ipinyou.com
 .ipl.hk
 .ipla.hit.stat24.com
 .ipm.gov
@@ -11251,6 +11435,7 @@
 .j.appjiagu.com
 .j.br.baidu.com
 .j.domob.cn
+.j.microad.net
 .j.microad.net
 .j.wan.liebao.cn
 .j.wit.qq.com
@@ -11533,9 +11718,6 @@
 .kimia.com
 .kimia.es
 .kinderhook-ny.gov
-.kinesis.us-east-1.amazonaws.com
-.kinesisanalytics.eu-central-1.amazonaws.com
-.kinesisanalytics.eu-west-1.amazonaws.com
 .king-contenido-prod.secure2.footprint.net
 .kingcounty.gov
 .kingfield-me.gov
@@ -11603,6 +11785,7 @@
 .kshousingcorp.gov
 .ksready.gov
 .kstj.baidu.com
+.kstj.baidu.com
 .kthxd.lu.sogou.com
 .ktik-nsn.gov
 .ktivn.uranus.sogou.com
@@ -11634,6 +11817,7 @@
 .l.qq.com
 .l.sharethis.com
 .l0-secure.videohub.tv
+.l2.l.qq.com
 .l2.l.qq.com
 .la-trc.taboola.com
 .la.gov
@@ -11835,6 +12019,7 @@
 .letsmove.gov
 .letsmovebridgeportct.gov
 .letv.allyes.com
+.letv.allyes.com
 .letv.axp.admaster.com.cn
 .letv.cm.admaster.com.cn
 .level3.applifier.com
@@ -11927,6 +12112,7 @@
 .livepassdl2.conviva.com
 .liveramp.sync.go.sonobi.com
 .lives.l.qq.com
+.lives.l.qq.com
 .livesmi.com
 .livestats.kaltura.com
 .livingly-tagan.adlightning.com
@@ -11972,6 +12158,7 @@
 .loc.map.baidu.com
 .local-analytics.uberinternal.com
 .local.ownlocal.com
+.localhost
 .localmantra.com
 .localmediabuying.com
 .localytics.com
@@ -12027,11 +12214,13 @@
 .log.isnssdk.com
 .log.kgrid.co.kr
 .log.kuwo.cn
+.log.kuwo.cn
 .log.leadboxer.com
 .log.lemonpi.io
 .log.loveota.com
 .log.loveota.net
 .log.mix.sina.com.cn
+.log.mmstat.com
 .log.mmstat.com
 .log.mobpowertech.com
 .log.music.baidu.com
@@ -12057,9 +12246,11 @@
 .log.tagtic.cn
 .log.tapatalk.com
 .log.tbs.qq.com
+.log.tbs.qq.com
 .log.trackad.cz
 .log.trackingio.com
 .log.tutuapp.com
+.log.umsns.com
 .log.umsns.com
 .log.umtrack.com
 .log.vcgame.cn
@@ -12100,8 +12291,8 @@
 .logs1202.xiti.com
 .logsdk.qq.com
 .logserver.insight.ucweb.com
-.logservices.ipass.com
 .logtest.moatads.com
+.logupdate.avlyun.sec.miui.com
 .logupdate.avlyun.sec.miui.com
 .logv2.mp3.zing.vn
 .logx.optimizely.com
@@ -12228,6 +12419,7 @@
 .lyssh.gw.localytics.com
 .m-78.jp
 .m-adash.m.taobao.com
+.m-adash.m.taobao.com
 .m-metrics.capitalone.com
 .m-motu.doglobal.net
 .m-shes.ru
@@ -12242,6 +12434,7 @@
 .m.adsymptotic.com
 .m.adxpop.com
 .m.airpush.com
+.m.airpush.com
 .m.anycast.adnxs.com
 .m.bailingjiankang.com
 .m.banner.linksynergy.com
@@ -12249,6 +12442,7 @@
 .m.bss.pandora.xiaomi.com
 .m.bugly.qq.com
 .m.clkservice.youdao.com
+.m.data.mob.com
 .m.data.mob.com
 .m.domob.cn
 .m.doubleclick.net
@@ -12353,6 +12547,7 @@
 .madisoncountync.gov
 .madnet.ru
 .mads.amazon-adsystem.com
+.mads.amazon-adsystem.com
 .mads.amazon.com
 .mads.bz
 .mads.com
@@ -12366,6 +12561,7 @@
 .mag2.magmacom.com
 .magic.cmcm.com
 .magnetic.com
+.magnetic.t.domdex.com
 .magnetic.t.domdex.com
 .magnify-app.s3.eu-west-2.amazonaws.com
 .magnum.cdn.speedshiftmedia.com
@@ -12561,6 +12757,7 @@
 .maryville-tn.gov
 .masatohagiwara.net
 .masdk.3g.qq.com
+.masdk.3g.qq.com
 .masdpanalytics.azureedge.net
 .masenate.gov
 .mashantucket-nsn.gov
@@ -12581,10 +12778,13 @@
 .match-us-east-1.sharethrough.com
 .match.adsby.bidtheatre.com
 .match.adsrvr.org
+.match.adsrvr.org
 .match.deepintent.com
 .match.justpremium.com
 .match.p4p.1688.com
 .match.prod.bidr.io
+.match.prod.bidr.io
+.match.rundsp.com
 .match.rundsp.com
 .match.sharethrough.com
 .match.sync.ad.cpe.dotomi.com
@@ -12633,6 +12833,7 @@
 .mayaguezpr.gov
 .maytag.ecorebates.com
 .mazu.3g.qq.com
+.mazu.3g.qq.com
 .mb-cdn.stocard.de
 .mb.moatads.com
 .mb.taboola.com
@@ -12655,10 +12856,9 @@
 .mc.adpia.vn
 .mc.exacttarget.com
 .mc.s10.exacttarget.com
-.mc.s4.exacttarget.com
-.mc.s6.exacttarget.com
 .mc.s7.exacttarget.com
 .mc.weather.com.cn
+.mc.yandex.ru
 .mc.yandex.ru
 .mcac-md.gov
 .mcc.gov
@@ -12686,7 +12886,6 @@
 .mcore.vcgame.cn
 .mcrmc.gov
 .mcs.eyereturn.com
-.mcsvc.dynatrace.com
 .md-a-c.apptimize.com
 .md-a-d.apptimize.com
 .md-a-s.apptimize.com
@@ -12739,6 +12938,7 @@
 .media-ncd.cmgdigital.com
 .media.admicro.vn
 .media.admob.com
+.media.admob.com
 .media.adnetwork.vn
 .media.adtimaserver.vn
 .media.ambientplatform.vn
@@ -12753,6 +12953,7 @@
 .media.sharethrough.com
 .media.taplytics.com
 .media.trafficfactory.biz
+.media.trafficjunky.net
 .media.trafficjunky.net
 .media1.admicro.vn
 .media10.admicro.vn
@@ -12929,6 +13130,7 @@
 .mha.gov
 .mhb.gov
 .mi.gdt.qq.com
+.mi.gdt.qq.com
 .mi.gov
 .mi365.gov
 .mia01.digex.com
@@ -12997,7 +13199,6 @@
 .millikenco.gov
 .millikencolorado.gov
 .millingtontn.gov
-.milliyetreklam-p.mncdn.com
 .millstonenj.gov
 .millville-nj.gov
 .millvillenj.gov
@@ -13019,6 +13220,7 @@
 .mineola-ny.gov
 .mineralwellstx.gov
 .minerva.ttd.net
+.minfo.wps.cn
 .minfo.wps.cn
 .mini.cpc.sogou.com
 .mini.jijiplayer.com
@@ -13067,6 +13269,7 @@
 .mkt.tune.com
 .ml.optimizely.com
 .mlb-d.openx.net
+.mlb.did.ijinshan.com
 .mlb.did.ijinshan.com
 .mlg-d.openx.net
 .mlkday.gov
@@ -13117,6 +13320,8 @@
 .moba8.net
 .mobaders.oss-cn-beijing.aliyuncs.com
 .mobads-logs.baidu.com
+.mobads-logs.baidu.com
+.mobads.baidu.com
 .mobads.baidu.com
 .mobads4app.com
 .mobair-ssl.com
@@ -13192,6 +13397,7 @@
 .mobileader.ru
 .mobileads.dieuviet.com
 .mobileads.google.com
+.mobileads.msn.com
 .mobileads.msn.com
 .mobileadvertisinghub.com
 .mobileanalytics.us-east-1.amazonaws.com
@@ -13287,6 +13493,7 @@
 .monitor-tools.cn.miaozhen.com
 .monitor.admicro.vn
 .monitor.superfastmediation.com
+.monitor.uu.qq.com
 .monitor.uu.qq.com
 .monitor.wpm.neustar.biz
 .monitoring.vungle.com
@@ -13418,6 +13625,7 @@
 .ms.applvn.com
 .ms.bdimg.com
 .ms.cmcm.com
+.ms.cmcm.com
 .ms.gov
 .ms.onscroll.com
 .ms11.net
@@ -13431,9 +13639,11 @@
 .msg.cocamobile.com
 .msg.shouji.360.cn
 .msg.umengcloud.com
+.msg.umengcloud.com
 .msgstore2.pldtprv.net
 .msha.gov
 .mshomehelp.gov
+.msite.baidu.com
 .msite.baidu.com
 .mslmi.gov
 .msn.wrating.com
@@ -13509,6 +13719,8 @@
 .mxtsr.com
 .mxttrf.com
 .mxvp-ad-config-prod-1.zenmxapps.com
+.mxvp-ad-config-prod-1.zenmxapps.com
+.mxvp-feature-toggle-prod-1.zenmxapps.com
 .mxvp-feature-toggle-prod-1.zenmxapps.com
 .my-material.zone1.meitudata.com
 .my.adsmogo.com
@@ -13593,7 +13805,6 @@
 .na-api.mobile.inrix.com
 .na-b.marketo.com
 .na-dmpsync.3lift.com
-.na-east.jitterbit.com
 .na-eb2.3lift.com
 .na-g.marketo.com
 .na-gateway.supersonicads.com
@@ -13713,6 +13924,7 @@
 .nbrc.gov
 .nbrecsys.4paradigm.com
 .nbsdk-baichuan.alicdn.com
+.nbsdk-baichuan.taobao.com
 .nbsdk-baichuan.taobao.com
 .nc.gov
 .nc004x.corp.youdao.com
@@ -13911,6 +14123,7 @@
 .news4cars.com
 .newscorp.grapeshot.co.uk
 .newsnet.in.ua
+.newspush.sinajs.cn
 .newspush.sinajs.cn
 .newton-nh.gov
 .newtonma.gov
@@ -15668,6 +15881,8 @@
 .nsb.ups.com
 .nsce1.ji-net.com
 .nsclick.baidu.com
+.nsclick.baidu.com
+.nsclickvideo.baidu.com
 .nsclickvideo.baidu.com
 .nsdar.bol.co.tz
 .nsep.gov
@@ -15809,6 +16024,7 @@
 .observermedia-d.openx.net
 .oc.umeng.co
 .oc.umeng.com
+.oc.umeng.com
 .oca.telemetry.microsoft.com
 .oca.telemetry.microsoft.com.nsatc.net
 .occ.gov
@@ -15836,6 +16052,7 @@
 .odisej.telekom.yu
 .odm.nielsen.com
 .odni.gov
+.odr.mookie1.com
 .odr.mookie1.com
 .oea.gov
 .ofcm.gov
@@ -15945,7 +16162,6 @@
 .olympia-wa.gov
 .olympiawa.gov
 .olympus.noc.uoa.gr
-.om-datacollector.ipass.com
 .omaha-ne.gov
 .omaha-nsn.gov
 .omax.admarvel.com
@@ -15955,6 +16171,7 @@
 .omeglewarden.com
 .omg-studio-d.openx.net
 .omg.inte.sogoucdn.com
+.omgmta.qq.com
 .omgmta.qq.com
 .omgmta1.qq.com
 .omrdatacapture.com
@@ -16049,6 +16266,7 @@
 .openinternet.gov
 .openjmacs.m.taobao.com
 .openohio.gov
+.openrcv.baidu.com
 .openrcv.baidu.com
 .openrtb-eu-west-1.axonix.com
 .openrtb-t.axonix.com
@@ -16147,7 +16365,6 @@
 .origin-ads.undertone.com
 .origin-c0.anthill.vn
 .origin-cdn.openx.com
-.origin-click.virt.s7.exacttarget.com
 .origin-e.anthill.vn
 .origin-gizmo.serving-sys.com
 .origin-hb.undertone.com
@@ -16297,6 +16514,7 @@
 .p.adnxs.com
 .p.adrta.com
 .p.adsymptotic.com
+.p.adsymptotic.com
 .p.alcmpn.com
 .p.algovid.com
 .p.alimama.com
@@ -16313,6 +16531,7 @@
 .p.inte.sogou.com
 .p.kjwx8.com
 .p.l.qq.com
+.p.l.qq.com
 .p.lu.sogou.com
 .p.medialytics.com
 .p.metrilo.com
@@ -16324,10 +16543,12 @@
 .p.predictvideo.com
 .p.presage.io
 .p.rfihub.com
+.p.rfihub.com
 .p.sdu8cvc.com
 .p.share.mob.com
 .p.skimresources.com
 .p.store.qq.com
+.p.tanx.com
 .p.tanx.com
 .p.teads.tv
 .p.tencentmind.com
@@ -16336,10 +16557,12 @@
 .p13n-results-api.optimizely.com
 .p1cluster.cxense.com
 .p2.l.qq.com
+.p2.l.qq.com
 .p25433.clksite.com
 .p287.atemda.com
 .p3.adhitzads.com
 .p3.l.qq.com
+.p3p.mmstat.com
 .p3p.mmstat.com
 .p3p.sogou.com
 .p3p.yahoo.com
@@ -16380,24 +16603,18 @@
 .paella.adrise.tv
 .pagead-googlehosted.l.google.com
 .pagead-tpc.l.google.com
+.pagead-tpc.l.google.com
 .pagead.google.com
 .pagead.l.google.com
+.pagead.l.google.com
 .pagead2.googleadservices.com
+.pagead2.googlesyndication.com
 .pagead2.googlesyndication.com
 .pagead46.l.doubleclick.net
 .pagechoice.net
 .pagerank-server7.de
 .pagerank-suchmaschine.de
-.pages.exacttarget.com
-.pages.s4.exacttarget.com
-.pages.s6.exacttarget.com
-.pages.s7.exacttarget.com
 .pages.taboola.com
-.pages.virt.exacttarget.com
-.pages.virt.s10.exacttarget.com
-.pages.virt.s4.exacttarget.com
-.pages.virt.s6.exacttarget.com
-.pages.virt.s7.exacttarget.com
 .pageshow.dftoutiao.com
 .pagespeed.report.qq.com
 .pahouse.gov
@@ -16447,10 +16664,13 @@
 .partner.applift.com
 .partner.glance.inmobi.com
 .partner.googleadservices.com
+.partner.googleadservices.com
 .partner.knorex.com
 .partner.shareaholic.com
 .partner4solutions.gov
 .partnerad.l.google.com
+.partnerad.l.google.com
+.partnerads.ysm.yahoo.com
 .partnerads.ysm.yahoo.com
 .partnerearning.com
 .partners-hotwire-com.impactradius.com
@@ -16497,6 +16717,7 @@
 .patreasury.gov
 .patrickhickey.eu
 .patriot.cs.pp.cn
+.patriot.cs.pp.cn
 .patriotbonds.gov
 .paula.e-technik.uni-rostock.de
 .paulding.gov
@@ -16526,6 +16747,7 @@
 .pc-humana-collect.tealiumiq.com
 .pc-humana-visitor-service-us-east-1.tealiumiq.com
 .pc.quansj.cn
+.pc.videoclick.baidu.com
 .pc.videoclick.baidu.com
 .pc1.ha1.yumenetworks.com
 .pc1.yumenetworks.com
@@ -16661,6 +16883,7 @@
 .phoenixoregon.gov
 .phone-arena-d.openx.net
 .photobucket.adnxs.com
+.photobucket.adnxs.com
 .photon.sci-museum.kita.osaka.jp
 .photon.sci-museum.osaka.jp
 .photoscape.ch
@@ -16714,6 +16937,7 @@
 .pinghot.qq.com
 .pingjs.qq.com
 .pingma.qq.com
+.pingma.qq.com
 .pingmedia.ru
 .pings.conviva.com
 .pingtcss.qq.com
@@ -16751,7 +16975,9 @@
 .pixel.admedia.com
 .pixel.admobclick.com
 .pixel.adsafeprotected.com
+.pixel.adsafeprotected.com
 .pixel.adsrvr.org
+.pixel.advertising.com
 .pixel.advertising.com
 .pixel.alexametrics.com
 .pixel.bounceexchange.com
@@ -16761,16 +16987,19 @@
 .pixel.facebook.com
 .pixel.keywee.co
 .pixel.mathtag.com
+.pixel.mathtag.com
 .pixel.mediaiqdigital.com
 .pixel.moatads.com
 .pixel.mtrcs.samba.tv
 .pixel.onaudience.com
 .pixel.quantserve.com
 .pixel.rubiconproject.com
+.pixel.rubiconproject.com
 .pixel.s3xified.com
 .pixel.sitescout.com
 .pixel.sojern.com
 .pixel.spotify.com
+.pixel.tapad.com
 .pixel.tapad.com
 .pixel.watch
 .pixel2.moatads.com
@@ -16832,6 +17061,7 @@
 .playtomic.com
 .playwire-d.openx.net
 .plbslog.umeng.com
+.plbslog.umeng.com
 .pleasantonca.gov
 .pleasantontx.gov
 .pleasantvalley-ny.gov
@@ -16859,9 +17089,11 @@
 .pm.pinsightmedia.onelouder.com
 .pmbilling1.pubmatic.com
 .pmc-d.openx.net
+.pmc-d.openx.net
 .pmetrics.getclicky.com
 .pmf.gov
 .pmi.gov
+.pmir.3g.qq.com
 .pmir.3g.qq.com
 .pms.mb.qq.com
 .pmyspace.chartbeat.net
@@ -16963,6 +17195,7 @@
 .portsmouthvirginia.gov
 .pos-kupang.com
 .pos.baidu.com
+.pos.baidu.com
 .pos.punchh.com
 .poseycountyin.gov
 .position.dftoutiao.com
@@ -17048,7 +17281,6 @@
 .presage.io
 .prescott-az.gov
 .prescottvalley-az.gov
-.presence-grpc-noneu.truecaller.com
 .presentationtracking.netflix.com
 .preserveamerica.gov
 .presidentialdocuments.gov
@@ -17159,6 +17391,7 @@
 .protectyourmove.gov
 .protexting.com
 .proton.flurry.com
+.proton.flurry.com
 .prov4.alphonso.tv
 .prov5.alphonso.tv
 .providenceri.gov
@@ -17236,6 +17469,7 @@
 .pub1.co
 .pub2srv.com
 .pubads.g.doubleclick.net
+.pubads.g.doubleclick.net
 .public-webservice.apdc1n.adpushup.com
 .public-webservice.apdc2n.adpushup.com
 .public-webservice.apdc3n.adpushup.com
@@ -17271,6 +17505,7 @@
 .pubrepo.pubmatic.com
 .puck.scopely.io
 .puds.test.uae.uc.cn
+.puds.ucweb.com
 .puds.ucweb.com
 .pueblocountyco.gov
 .puenteaereo.info
@@ -17338,12 +17573,15 @@
 .px-conf.perimeterx.net
 .px-eu.dynamicyield.com
 .px.adhigh.net
+.px.adhigh.net
 .px.cdn.creative.medialytics.com
 .px.dpmsrv.com
 .px.dynamicyield.com
 .px.moatads.com
+.px.moatads.com
 .px.motoads.com
 .px.onespot.com
+.px.owneriq.net
 .px.owneriq.net
 .px.powerlinks.com
 .px.sharethis.com
@@ -17382,6 +17620,7 @@
 .qgss8.com
 .qhl.bealge.sogou.com
 .qianclick.baidu.com
+.qianclick.baidu.com
 .qianclick.baidu.com	
 .qlink.fusion.pinsightmedia.com
 .qpb.sohu.com
@@ -17392,6 +17631,7 @@
 .qs.ioam.de
 .qsearch.media.net
 .qservz.com
+.qss-client.qq.com
 .qss-client.qq.com
 .qt002x.corp.youdao.com
 .quakemarketing.com
@@ -17535,6 +17775,7 @@
 .rcom-use.dynamicyield.com
 .rcom.dynamicyield.com
 .rcp.c.appier.net
+.rcp.c.appier.net
 .rcv.mobad.ijinshan.com
 .rcv.union-wifi.com
 .rd.ane.yahoo.co.jp
@@ -17551,6 +17792,8 @@
 .rdrs.ad-score.com
 .rdstat.tanx.com
 .re.m.taobao.com
+.re.m.taobao.com
+.re.taobao.com
 .re.taobao.com
 .reachhigher.gov
 .reachmax-cm.admaster.com.cn
@@ -17627,6 +17870,7 @@
 .redirect.datahc.com
 .redirect.privateadtracking.com
 .redirect.simba.taobao.com
+.redirect.simba.taobao.com
 .redirect2719.ws
 .redirection.bid
 .redirectnative.com
@@ -17666,6 +17910,7 @@
 .relay1.medtronic.com
 .relayutah.gov
 .release.baidu.com
+.release.baidu.com
 .reliant.netgate.net.nz
 .relocatefeds.gov
 .remain.chartboosts.com
@@ -17683,12 +17928,9 @@
 .rep.logentries.com
 .replay.foreseeresults.com
 .replaycontroller.4seeresults.com
-.reply-mx.s6.exacttarget.com
-.reply-mx.s7.exacttarget.com
-.reply.exacttarget.com
-.reply.s10.exacttarget.com
 .reporo.net
 .report.adtech.de
+.report.adview.cn
 .report.adview.cn
 .report.appmetrica.yandex.net
 .report.clevernt.com
@@ -17718,6 +17960,7 @@
 .res.media.net
 .res.mi.baidu.com
 .res.mmstat.com
+.res.mmstat.com
 .res.qhupdate.com
 .res.tdxio.com
 .res1.applovin.com
@@ -17740,7 +17983,6 @@
 .rest.dynamicyield.com
 .rest.iad-01.braze.com
 .rest.iad-03.braze.com
-.rest.mobilerealtyapps.com
 .rest.segmentify.com
 .rest.sharethis.com
 .restartad.com
@@ -17769,6 +18011,7 @@
 .rg.yieldoptimizer.com
 .rg.yottos.com
 .rge.pushwoosh.com
+.rh.qq.com
 .rh.qq.com
 .rhea.iad-03.braze.com
 .rheacountytn.gov
@@ -17817,6 +18060,7 @@
 .riversideca.gov
 .rivertonwy.gov
 .rj.baidu.com
+.rj.m.taobao.com
 .rj.m.taobao.com
 .rjgw.theta.sogou.com
 .rl.go2yd.com
@@ -17916,10 +18160,12 @@
 .royals.ee.nctu.edu.tw
 .royalston-ma.gov
 .rp.gwallet.com
+.rp.gwallet.com
 .rp.himediads.com
 .rpc-php.trafficfactory.biz
 .rpc-tapjoy-com-lb-1378811527.us-east-1.elb.amazonaws.com
 .rpc.tapjoy.com
+.rplog.baidu.com
 .rplog.baidu.com
 .rpvca.gov
 .rq.vserv.mobi
@@ -17931,7 +18177,9 @@
 .rs.adx.io
 .rs.sinajs.cn
 .rs1.qq.com
+.rs1.qq.com
 .rs2.adledge.com
+.rs2.qq.com
 .rs2.qq.com
 .rs540.ncu.edu.tw
 .rsa-al.gov
@@ -17980,6 +18228,7 @@
 .rtb.admaster.com.cn
 .rtb.adservme.com
 .rtb.adsrvr.org
+.rtb.adview.cn
 .rtb.adview.cn
 .rtb.adx1.com
 .rtb.appbid.com
@@ -18034,8 +18283,10 @@
 .rubicon-east-bidder.manage.com
 .rubicon-east2-bidder.manage.com
 .rubicon-match.dotomi.com
+.rubicon-match.dotomi.com
 .rubicon-tagan.adlightning.com
 .rubiks.ca
+.rudy.adsnative.com
 .rudy.adsnative.com
 .rufex.ajfingenieros.cl
 .ruidoso-nm.gov
@@ -18104,6 +18355,8 @@
 .s.adx.io
 .s.agentanalytics.com
 .s.alitui.weibo.com
+.s.alitui.weibo.com
+.s.amazon-adsystem.com
 .s.amazon-adsystem.com
 .s.appintop.com
 .s.appjiagu.com
@@ -18113,6 +18366,7 @@
 .s.click.aliexpress.com
 .s.click.taobao.com
 .s.clkservice.youdao.com
+.s.cpro.baidu.com
 .s.cpro.baidu.com
 .s.d.adup-tech.com
 .s.de123.net
@@ -18173,6 +18427,7 @@
 .s.webtrends.com
 .s.wrating.com
 .s.yomob.com.cn
+.s.youmi.net
 .s.youmi.net
 .s0-2mdn-net.l.google.com
 .s0.2mdn.net
@@ -18372,6 +18627,7 @@
 .sc.ggfeng.com
 .sc.gov
 .sc.iasds01.com
+.sc.iasds01.com
 .sc.omniture.com
 .sc.smardroid.com
 .sc3.omniture.com
@@ -18402,6 +18658,7 @@
 .scdn.cxense.com
 .scdn.uc.atwola.com
 .scdown.qq.com
+.scdown.qq.com
 .scdps.gov
 .scdsfdfgdr12.tk
 .scene.vip.xunlei.com
@@ -18427,6 +18684,7 @@
 .scinet-test.gov
 .scinet.gov
 .scituatema.gov
+.sclick.baidu.com
 .sclick.baidu.com
 .scns1.mcafee.com
 .scoh.gov
@@ -18476,6 +18734,7 @@
 .sd.cname3.igexin.com
 .sd.cname5.igexin.com
 .sd.cname6.igexin.com
+.sd.domob.cn
 .sd.domob.cn
 .sd.gov
 .sd.iperceptions.com
@@ -18561,6 +18820,7 @@
 .sdk.dotui.cn
 .sdk.dreamflyuu.com
 .sdk.e.qq.com
+.sdk.e.qq.com
 .sdk.engage.co
 .sdk.fevo.com
 .sdk.fiksu.com
@@ -18589,7 +18849,6 @@
 .sdk.inlocomedia.com
 .sdk.jeeng.com
 .sdk.justad.mobi
-.sdk.kamcord.com
 .sdk.kingoapp.com
 .sdk.look.360.cn
 .sdk.loveota.net
@@ -18601,8 +18860,11 @@
 .sdk.mobnativeads.com
 .sdk.native123.com
 .sdk.open.phone.igexin.com
+.sdk.open.phone.igexin.com
+.sdk.open.talk.gepush.com
 .sdk.open.talk.gepush.com
 .sdk.open.talk.getui.net
+.sdk.open.talk.igexin.com
 .sdk.open.talk.igexin.com
 .sdk.ourplay.net
 .sdk.out.usbla.net
@@ -18653,12 +18915,16 @@
 .sdkapi.webeyemob.com
 .sdkapicdn.applanga.com
 .sdkapp.mobile.sina.cn
+.sdkapp.mobile.sina.cn
 .sdkapp.uve.weibo.com
 .sdkcdn.videojj.com
+.sdkclick.mobile.sina.cn
 .sdkclick.mobile.sina.cn
 .sdkcoimage.onemt.co
 .sdkconf.msstatic.com
 .sdkconfig.ad.intl.xiaomi.com
+.sdkconfig.ad.intl.xiaomi.com
+.sdkconfig.ad.xiaomi.com
 .sdkconfig.ad.xiaomi.com
 .sdkconfig.vrvm.com
 .sdkevents.zapr.in
@@ -18779,6 +19045,7 @@
 .secure-yt.imrworldwide.com
 .secure-za.imrworldwide.com
 .secure.adnxs.com
+.secure.adnxs.com
 .secure.ads.placeiq.com
 .secure.fastclick.net
 .secure.gooddata.com
@@ -18793,6 +19060,7 @@
 .secure.personali.com
 .secure.quantserve.com
 .secure0.adswizz.com
+.securepubads.g.doubleclick.net
 .securepubads.g.doubleclick.net
 .securev-gb.mobilexpression.com
 .securev.mobilexpression.com
@@ -18879,6 +19147,7 @@
 .serve.gov
 .serve.mediaforce.com
 .serve.popads.net
+.serve.popads.net
 .serve.popupads.net
 .serve.revcontent.com
 .serve.uberads.com
@@ -18937,6 +19206,7 @@
 .servertest.mgid.com
 .servga.gov
 .service.ad.adesk.com
+.service.ad.adesk.com
 .service.ad.duomi.com
 .service.cmp.oath.com
 .service.epro.sogou.com
@@ -18965,7 +19235,7 @@
 .servir.gov
 .servs.adblox.net
 .sessionm.com
-.sessions.mobileroadie.com
+.sestat.baidu.com
 .sestat.baidu.com
 .seth.avazutracking.net
 .setting.adzcore.com
@@ -19027,6 +19297,7 @@
 .shapingnewjersey.gov
 .shapingnj.gov
 .share.baidu.com
+.share.baidu.com
 .share.mob.com
 .share.yandex.ru
 .shareably-d.openx.net
@@ -19068,6 +19339,7 @@
 .show-3.mediav.com
 .show-f.mediav.com
 .show-g.mediav.com
+.show-g.mediav.com
 .show-m.mediav.com
 .show-msgch.qq.com
 .show-s.mediav.com
@@ -19076,6 +19348,7 @@
 .show.g.mediav.com
 .show.look.360.cn
 .show.m.mediav.com
+.show.re.taobao.com
 .show.re.taobao.com
 .showads-jp.pubmatic.com
 .showads-sg.pubmatic.com
@@ -19087,7 +19360,6 @@
 .shreveportla.gov
 .shrewsbury-ma.gov
 .shrewsburyma.gov
-.sidecar.gitter.im
 .sierracountynm.gov
 .sierravistaaz.gov
 .sierrawild.gov
@@ -19099,14 +19371,15 @@
 .signalhq.com
 .signalmountaintn.gov
 .signals.ampiri.com
-.signin.dynatrace.com
 .sigtarp.gov
 .silurian.cn
 .silvercitynm.gov
 .silvermob.com
 .silverspringtwp-pa.gov
 .simaba.taobao.com
+.simaba.taobao.com
 .simage2.pubmatic.com
+.simba.m.taobao.com
 .simba.m.taobao.com
 .simpi.tourstogo.us
 .simplesharebuttons.com
@@ -19217,7 +19490,6 @@
 .skgroup.kiev.ua
 .skidki-yuga.ru
 .skiholidays4beginners.com
-.skin.mobilesentrix.com
 .skw.adledge.com
 .sky.kies.co.kr
 .skypicker-api.infinario.com
@@ -19389,6 +19661,7 @@
 .smrcek.com
 .sms.otair.com
 .smt.admaster.com.cn
+.smt.admaster.com.cn
 .smtp.2911.net
 .smtp.bangla.net
 .smtp.macau.ctm.net
@@ -19431,6 +19704,7 @@
 .snshq902.ghanatel.com.gh
 .snssdk1233.onelink.me
 .sobar.baidu.com
+.sobar.baidu.com
 .sobartop.baidu.com
 .soboba-nsn.gov
 .socdm.com
@@ -19453,6 +19727,7 @@
 .soft.tbs.imtt.qq.com
 .sohasdk.sohacorp.vn
 .sohu.wrating.com
+.sohutv.cm.admaster.com.cn
 .sohutv.cm.admaster.com.cn
 .soju.openx.net
 .sol1.iberdrola.com
@@ -19603,6 +19878,7 @@
 .srbijacafe.org
 .srch.atdmt.com
 .srd.simba.taobao.com
+.srd.simba.taobao.com
 .srepdata.gannettdigital.com
 .srepdata.usatoday.com
 .srmt-nsn.gov
@@ -19610,6 +19886,7 @@
 .srpmic-nsn.gov
 .srs.gov
 .srslogisticts.com
+.srv.buysellads.com
 .srv.buysellads.com
 .srv.carbonads.net
 .srv.dc-1.net
@@ -19639,6 +19916,7 @@
 .ssab.gov
 .ssac.suning.com
 .sscefsol.com
+.ssdk.adkmob.com
 .ssdk.adkmob.com
 .sshowads.pubmatic.com
 .ssl-6582datamanager.de
@@ -19759,6 +20037,7 @@
 .staging.admin.e.mi.com
 .stagingaz.gov
 .stags.bluekai.com
+.stags.bluekai.com
 .stamfordct.gov
 .standards.gov
 .stanhopenj.gov
@@ -19777,6 +20056,7 @@
 .startribune-d.openx.net
 .startup.inmobi.com
 .startup.mobile.yandex.net
+.startup.oupeng.com
 .startup.oupeng.com
 .stas.outbrain.com
 .stat-parser02.aatkit.com
@@ -19797,6 +20077,7 @@
 .stat.pushwoosh.com
 .stat.simba.taobao.com
 .stat.su
+.stat.v.baidu.com
 .stat.v.baidu.com
 .stat.zuimeitianqi.com
 .state.gov
@@ -19831,6 +20112,7 @@
 .static.ads-twitter.com
 .static.ads.apusapps.com
 .static.adsafeprotected.com
+.static.adsafeprotected.com
 .static.adservme.com
 .static.adsota.com
 .static.adthor.com
@@ -19862,6 +20144,7 @@
 .static.dbmads.com
 .static.diditaxi.com.cn
 .static.doubleclick.net
+.static.doubleclick.net
 .static.dynamicyield.com
 .static.earnify.com
 .static.ecorebates.com
@@ -19875,6 +20158,7 @@
 .static.gammaplatform.com
 .static.genieessp.com
 .static.getclicky.com
+.static.googleadsserving.cn
 .static.googleadsserving.cn
 .static.gridsumdissector.com
 .static.hadarone.com
@@ -19982,6 +20266,7 @@
 .stats.gioneemobile.net
 .stats.hbbtv.smartclip.net
 .stats.huuuge.net
+.stats.ipinyou.com
 .stats.ipinyou.com
 .stats.ivymobile.com
 .stats.jpush.cn
@@ -20290,7 +20575,9 @@
 .sync.3g.qq.com
 .sync.ad-stir.com
 .sync.adaptv.advertising.com
+.sync.adaptv.advertising.com
 .sync.adkernel.com
+.sync.adotmob.com
 .sync.adotmob.com
 .sync.adspruce.com
 .sync.adtelligent.com
@@ -20309,8 +20596,11 @@
 .sync.graph.gcloud.bluecava.com
 .sync.graph.geo.bluecava.com
 .sync.intentiq.com
+.sync.intentiq.com
+.sync.ipredictive.com
 .sync.ipredictive.com
 .sync.logly.co.jp
+.sync.mathtag.com
 .sync.mathtag.com
 .sync.outbrain.com
 .sync.republer.com
@@ -20486,6 +20776,7 @@
 .tags.affiliatefuture.com
 .tags.api.umbel.com
 .tags.bluekai.com
+.tags.bluekai.com
 .tags.bluekai.com.edgekey.net
 .tags.clickagy.com
 .tags.clickintext.net
@@ -20515,6 +20806,7 @@
 .tagsapi.otherlevels.com
 .tahit.wastech2016.in
 .tail.loggly.com
+.tajs.qq.com
 .tajs.qq.com
 .takepride.gov
 .takip.site
@@ -20547,6 +20839,7 @@
 .tap-secure.rubiconproject.com
 .tap-t.rubiconproject.com
 .tap.company
+.tap.rubiconproject.com
 .tap.rubiconproject.com
 .tap2-cdn.rubiconproject.com
 .tapas.net
@@ -20601,6 +20894,7 @@
 .tcis.gov
 .tck.synerise.com
 .tcrwharen.homepage.t-online.de
+.tcss.qq.com
 .tcss.qq.com
 .td.crwdcntrl.net
 .td.yieldify.com
@@ -20663,6 +20957,7 @@
 .temai.m.taobao.com
 .temai.snssdk.com
 .temai.taobao.com
+.temai.taobao.com
 .temeculaca.gov
 .tempe.gov
 .templates.sharethrough.com
@@ -20707,6 +21002,7 @@
 .texasonline.gov
 .texasstateparks.gov
 .texassupremecourtcommission.gov
+.textlink.simba.taobao.com
 .textlink.simba.taobao.com
 .textmine-d.openx.net
 .textspeier.de
@@ -20862,6 +21158,7 @@
 .tnquitline.gov
 .tnrecovery.gov
 .tns.simba.taobao.com
+.tns.simba.taobao.com
 .tntoolkit.gov
 .tntreasury.gov
 .tnvacation.gov
@@ -20871,6 +21168,7 @@
 .todaymediainc-d.openx.net
 .tofurkey.urbanairship.com
 .token.ad
+.token.rubiconproject.com
 .token.rubiconproject.com
 .tokfb.adsrvr.org
 .tokokan.com.com
@@ -20897,8 +21195,10 @@
 .tooelecountyut.gov
 .tool.cleverads.vn
 .toolbar.baidu.com
+.toolbar.baidu.com
 .toolbar.msn.com
 .toolecountymt.gov
+.tools.3g.qq.com
 .tools.3g.qq.com
 .tools.mgid.com
 .tools.pubmatic.com
@@ -20981,6 +21281,7 @@
 .tpa-d.openx.net
 .tpbid.com
 .tpc.googlesyndication.com
+.tpc.googlesyndication.com
 .tpcnc.googlesyndication.com
 .tps.doubleverify.com
 .tps.gov
@@ -21009,7 +21310,9 @@
 .trac.admob.com
 .trac.mediaiqdigital.com
 .trace.qq.com
+.trace.qq.com
 .track-core.bncnt.com
+.track-east.mobileadtrading.com
 .track-east.mobileadtrading.com
 .track-ipv4.earnify.com
 .track-sjc.mobileadtrading.com
@@ -21051,6 +21354,7 @@
 .track.effiliation.com
 .track.eu2.remerge.io
 .track.eyeviewads.com
+.track.eyeviewads.com
 .track.fyber.com
 .track.knlob.com
 .track.ktplay.com
@@ -21072,6 +21376,7 @@
 .track.pricespider.com
 .track.pubmatic.com
 .track.ra.icast.cn
+.track.ra.icast.cn
 .track.recreativ.ru
 .track.saygames.io
 .track.seadform.net
@@ -21088,7 +21393,9 @@
 .track.tenjin.com
 .track.tenjin.io
 .track.tiara.daum.net
+.track.tiara.daum.net
 .track.toroadvertising.com
+.track.uc.cn
 .track.uc.cn
 .track.viewdeos.com
 .track.volo-mobile.com
@@ -21122,6 +21429,7 @@
 .trackimpression.com
 .tracking-ams5.cj.com
 .tracking-dc6.cj.com
+.tracking-server-prod-1.zenmxapps.com
 .tracking-server-prod-1.zenmxapps.com
 .tracking-sj2.cj.com
 .tracking-stvde.adsafety.net
@@ -21162,6 +21470,7 @@
 .tracking.listhub.net
 .tracking.m6r.eu
 .tracking.metalyzer.com
+.tracking.miui.com
 .tracking.miui.com
 .tracking.mobileadstrk.com
 .tracking.mobinetad.com
@@ -21246,6 +21555,7 @@
 .trendagemobile.cdn.trendage.com
 .trenddigital.vn
 .trends-s1.revcontent.com
+.trends.mobile.sina.cn
 .trends.mobile.sina.cn
 .trends.revcontent.com
 .trends.taboola.com
@@ -21410,6 +21720,7 @@
 .tui.gtimg.com
 .tui.taobao.com
 .tuiguang.meitu.com
+.tuiguang.meitu.com
 .tuijian.baidu.com
 .tukwila-wa.gov
 .tukwilawa.gov
@@ -21427,6 +21738,7 @@
 .tunein.adswizz.com
 .tunein.deliveryengine.adswizz.com
 .tungurahua.andinanet.net
+.tunion-api.m.taobao.com
 .tunion-api.m.taobao.com
 .tupeloms.gov
 .tupperlakeny.gov
@@ -21516,6 +21828,7 @@
 .ubike.tourstogo.us
 .ubisoftinternational.demdex.net
 .ubmcmm.baidustatic.com
+.ubmcmm.baidustatic.com
 .uc.ucweb.com
 .uc9.ucweb.com
 .uce.gov
@@ -21528,6 +21841,7 @@
 .uctx.gov
 .ucus.ucweb.com
 .udall.gov
+.udash.umengcloud.com
 .udash.umengcloud.com
 .udata.inlocomedia.com
 .udc-neb.kampyle.com
@@ -21564,6 +21878,7 @@
 .ulog.ksapisrv.com
 .ulog.umengcloud.com
 .ulogs.umeng.com
+.ulogs.umeng.com
 .ulogs.umengcloud.com
 .ulstercountyny.gov
 .ultimate-guitar-d.openx.net
@@ -21572,7 +21887,9 @@
 .ultra2.tsinghua.edu.cn
 .ultraadserver.com
 .um.simpli.fi
+.um.simpli.fi
 .um.videmob.com
+.um2.eqads.com
 .um2.eqads.com
 .umbel.com
 .umbxd15896.su
@@ -21582,6 +21899,7 @@
 .umengjmacs.m.taobao.com
 .umid.orion.meizu.com
 .ums.adtechjp.com
+.ums.adtechus.com
 .ums.adtechus.com
 .umtrack.com
 .un1.satlink.com
@@ -21603,6 +21921,7 @@
 .unilead.com
 .unileadnetwork.com
 .unimhk.com
+.union.baidu.com
 .union.baidu.com
 .union.dbba.cn
 .union.discuz.qq.com
@@ -21700,10 +22019,12 @@
 .uploads.tmweb.ru
 .uplynk.adaptv.advertising.com
 .upoll.umengcloud.com
+.upoll.umengcloud.com
 .uppermarlboromd.gov
 .uppersiouxcommunity-nsn.gov
 .upperskagit-nsn.gov
 .upperuwchlan-pa.gov
+.ups.ksmobile.net
 .ups.ksmobile.net
 .upsight-api.com
 .upsight.adsrvr.org
@@ -21746,6 +22067,7 @@
 .us-tk.mobpowertech.com
 .us-tracking.dyntrk.com
 .us-u.openx.net
+.us-u.openx.net
 .us-v3.tracking.justpremium.com
 .us-west-2.world.rw.yieldmo.com
 .us-west-pulsepoint-rtb.quantserve.com
@@ -21753,6 +22075,7 @@
 .us-west.load.exelator.com
 .us-win.bidsopt.com
 .us.a1.yimg.com
+.us.adserver.yahoo.com
 .us.adserver.yahoo.com
 .us.bannyat.com
 .us.bksn.se
@@ -21919,8 +22242,10 @@
 .uth03.ns.uu.net
 .utica-il.gov
 .utility.baidu.com
+.utility.baidu.com
 .utils.bounceexchange.com
 .utk.baidu.com
+.utop.umengcloud.com
 .utop.umengcloud.com
 .utp-dmp.ucweb.com
 .utp.ucweb.com
@@ -21931,6 +22256,7 @@
 .uxbridge-ma.gov
 .uxip.meizu.com
 .uyunad.com
+.v.admaster.com.cn
 .v.admaster.com.cn
 .v.admedia.com
 .v.adsrvr.org
@@ -21943,6 +22269,7 @@
 .v.cf.ssacdn.com
 .v.chartboost.com
 .v.domob.cn
+.v.gdt.qq.com
 .v.gdt.qq.com
 .v.inigsplan.ru
 .v.lkqd.net
@@ -22054,6 +22381,7 @@
 .vastx.moatads.com
 .vatrack.hinet.net
 .vbaof.admaster.com.cn
+.vbaof.admaster.com.cn
 .vbhil.gov
 .vcardsdkservice.vivo.com.cn
 .vcdn.adnxs.com
@@ -22074,7 +22402,6 @@
 .veads.veinteractive.com
 .vectaury.io
 .vector.parrable.com
-.vectorsdk.map.qq.com
 .veeseo.com
 .veevu.tourstogo.us
 .vef.gov
@@ -22122,6 +22449,7 @@
 .vg-k8s-setting.rayjump.com
 .vg-setting.rayjump.com
 .vhunantv.admaster.com.cn
+.vhunantv.admaster.com.cn
 .vi-serve.com
 .vi.gov
 .vi12x.xcle.cn
@@ -22137,6 +22465,7 @@
 .vid.springserve.com
 .vidaliaga.gov
 .vidanalytics.taboola.com
+.video-ad-stats.googlesyndication.com
 .video-ad-stats.googlesyndication.com
 .video-ads-apex.rubiconproject.com
 .video-ads.rubiconproject.com
@@ -22187,12 +22516,6 @@
 .view.admaster.com.cn
 .view.adsrvr.org
 .view.atdmt.com
-.view.exacttarget.com
-.view.virt.exacttarget.com
-.view.virt.s10.exacttarget.com
-.view.virt.s4.exacttarget.com
-.view.virt.s6.exacttarget.com
-.view.virt.s7.exacttarget.com
 .viewclc.com
 .viewpoint.com
 .viewwonder.com
@@ -22296,6 +22619,7 @@
 .vortex-sandbox.data.microsoft.com
 .vortex-win.data.microsoft.com
 .vortex.data.microsoft.com
+.vortex.data.microsoft.com
 .vortex.hulu.com
 .votetexas.gov
 .voxhq.urbanairship.com
@@ -22314,6 +22638,7 @@
 .vps.inte.sogou.com
 .vpx.adledge.com
 .vqq.admaster.com.cn
+.vqq.admaster.com.cn
 .vrl.m.conviva.com
 .vroll.net
 .vs0002.shi.kvh.ne.jp
@@ -22330,9 +22655,11 @@
 .vsnlradius1.vsnl.net.in
 .vsocial.crwdcntrl.net
 .vsohu.admaster.com.cn
+.vsohu.admaster.com.cn
 .vst.c.appier.net
 .vt.adition.com
 .vt.gov
+.vt.ipinyou.com
 .vt.ipinyou.com
 .vt.myvisualiq.net
 .vtalert.gov
@@ -22343,6 +22670,7 @@
 .vuukle-analytics.appspot.com
 .vv84.bj.bcebos.com
 .vvps.ws
+.vyk.admaster.com.cn
 .vyk.admaster.com.cn
 .vz-cdn.trafficjunky.net
 .vzdns01.verizon.com
@@ -22355,6 +22683,8 @@
 .w.inmobi.cn
 .w.inmobi.com
 .w.l.qq.com
+.w.l.qq.com
+.w.m.taobao.com
 .w.m.taobao.com
 .w.masky.biddingx.com
 .w.nc.cname.inmobi.com
@@ -22374,6 +22704,7 @@
 .wa.gov
 .wa.gtimg.com
 .wa.koowo.com
+.wa.kuwo.cn
 .wa.kuwo.cn
 .wacotx.gov
 .wad.ojooo.com
@@ -22472,16 +22803,20 @@
 .wb.brand.sogou.com
 .wb.gtimg.com
 .wbapp.mobile.sina.cn
+.wbapp.mobile.sina.cn
 .wbapp.uve.weibo.com
+.wbclick.mobile.sina.cn
 .wbclick.mobile.sina.cn
 .wbdds.jeuxvideo.com
 .wbn.su
+.wbpctips.mobile.sina.cn
 .wbpctips.mobile.sina.cn
 .wc-tracking.lavasoft.com
 .wc0x83ghk.homepage.t-online.de
 .wcdn.zoomanalytics.co
 .wcnyh.gov
 .wd-edge.sharethis.com
+.wd.adcolony.com
 .wd.adcolony.com
 .wd.sharethis.com
 .wda.com
@@ -22533,6 +22868,7 @@
 .webshared-front3.colt.net
 .webshared-front4.colt.net
 .websitebuildersinfo.in
+.webstat.kuwo.cn
 .webstat.kuwo.cn
 .webster-ma.gov
 .webster-nh.gov
@@ -22603,6 +22939,7 @@
 .weyyae.com
 .wf.taboola.com
 .wfoto.front.ru
+.wgo.mmstat.com
 .wgo.mmstat.com
 .wh.gov
 .whabi.csheaven.com
@@ -22730,6 +23067,7 @@
 .wl.51taifu.com
 .wlci.gov
 .wm.baidu.com
+.wm.baidu.com
 .wmata.gov
 .wmatc.gov
 .wmedia-track.uc.cn
@@ -22737,6 +23075,7 @@
 .wmip.ru
 .wmirk.ru
 .wmserver.net
+.wn.pos.baidu.com
 .wn.pos.baidu.com
 .wn.x.jd.com
 .wo.iuni.com.cn
@@ -22754,6 +23093,7 @@
 .woodburn-or.gov
 .woodfin-nc.gov
 .woodheights-mo.gov
+.woodpecker.uc.cn
 .woodpecker.uc.cn
 .woodstockct.gov
 .woodstockga.gov
@@ -22807,6 +23147,7 @@
 .ws-widget-lb-1.subiz.com
 .ws-widget-lb-2.subiz.com
 .ws.batch.com
+.ws.ksmobile.net
 .ws.ksmobile.net
 .ws.onthe.io
 .ws.push-notifs.com
@@ -23003,6 +23344,7 @@
 .www.gmcjjh.org
 .www.gold-city.it
 .www.google-analytics.com
+.www.googleadservices.com
 .www.googleadservices.com
 .www.googletagmanager.com
 .www.googletagservices.com
@@ -23277,6 +23619,7 @@
 .yadkincounty.gov
 .yadkincountync.gov
 .yads.c.yimg.jp
+.yads.c.yimg.jp
 .yads.yahoo.co.jp
 .yahoo.media.net
 .yakamafish-nsn.gov
@@ -23327,9 +23670,11 @@
 .ylx-2.com
 .ylx-3.com
 .ylx-4.com
+.ylx-4.com
 .ylx-a-img.advertica-cdn.com
 .ylx-aff.advertica-cdn.com
 .ym-default.adnxs.com
+.ym.adnxs.com
 .ym.adnxs.com
 .ymcdn.ymtrack6.co
 .ymp.gov
@@ -23366,6 +23711,7 @@
 .ysdk.qq.com
 .ystad.dns.swip.net
 .yt.mmstat.com
+.yt.mmstat.com
 .yt.moatads.com
 .yt.motoads.com
 .yts.moatads.com
@@ -23386,6 +23732,7 @@
 .yyffeicd.m.qxs.la
 .z.clickvip.shop
 .z.domob.cn
+.z.moatads.com
 .z.moatads.com
 .z.motoads.com
 .z.nomobileads.com
@@ -23417,6 +23764,7 @@
 .zestads.com
 .zestadz.com
 .zeus.ad.intl.xiaomi.com
+.zeus.ad.xiaomi.com
 .zeus.ad.xiaomi.com
 .zgsdk.zhugeio.com
 .zgsysz.com
