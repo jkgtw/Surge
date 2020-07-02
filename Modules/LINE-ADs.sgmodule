@@ -15,7 +15,6 @@ URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/m540x540$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/[0-9]+p\.mp4$,REJECT
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.*\.(jpg|jpeg|png),REJECT
-URL-REGEX,^https:\/\/d\.line-scdn\.net\/n\/_\d\/torimochi\.js\/public\/v\d\/release\/stable\/min\/torimochi\.js$,REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT
 URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT
