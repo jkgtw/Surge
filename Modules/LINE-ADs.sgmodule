@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20200710.01
+#!desc=刪掉 LINE 惱人的廣告 v20200714.01
 #!system=ios
 
 [Rule]
@@ -13,6 +13,7 @@ URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/m540x540$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/m1200x628$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/m1280x720$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/[0-9]+p\.mp4$,REJECT
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.*\.(jpg|jpeg|png),REJECT
