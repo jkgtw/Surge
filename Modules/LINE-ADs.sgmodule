@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20200715.01
+#!desc=刪掉 LINE 惱人的廣告 v20200715.02
 #!system=ios
 
 [Rule]
@@ -11,10 +11,9 @@ URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/,REJECT
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/m\d+x\d+$,REJECT
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/o1280x720$,REJECT
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.*\/[0-9]+p\.mp4$,REJECT
-URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.*\.(jpg|jpeg|png),REJECT
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d{3,4}x\d{3}$,REJECT
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d{3,4}p\.mp4$,REJECT
+URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png),REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT
 URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT
