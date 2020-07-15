@@ -1,22 +1,22 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20200715.04
+#!desc=刪掉 LINE 惱人的廣告 v20200715.05
 #!system=ios
 
 [Rule]
-URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT
-URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT
-URL-REGEX,^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$,REJECT
-URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT
-URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT
-URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT
+URL-REGEX,^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?,REJECT-DROP
+URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-DROP
+URL-REGEX,^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$,REJECT-DROP
+URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT-DROP
+URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT-DROP
+URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
-URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/,REJECT
+URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png),REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJECT
-URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT
-URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT
+URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT-DROP
+URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT-DROP
 
 [MITM]
 hostname = %APPEND% a.line.me, w.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me
