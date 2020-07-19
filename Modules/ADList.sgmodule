@@ -1,9 +1,8 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（更新外部資源） v20200716.01
+#!desc=狙殺常見廣告（需手動更新外部資源） v20200719.01
 #!system=ios
 
 [Rule]
-DOMAIN-SUFFIX,googletagmanager.com,DIRECT
 DOMAIN,itad.linetv.tw,REJECT
 DOMAIN,sessions.bugsnag.com,REJECT
 DOMAIN-KEYWORD,admarvel,REJECT
