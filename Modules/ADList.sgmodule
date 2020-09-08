@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20200719.01
+#!desc=狙殺常見廣告（需手動更新外部資源） v20200909.01
 #!system=ios
 
 [Rule]
@@ -24,7 +24,6 @@ DOMAIN-KEYWORD,allyes,REJECT
 DOMAIN-KEYWORD,analysis,REJECT
 DOMAIN-KEYWORD,analysys,REJECT
 DOMAIN-KEYWORD,analytics,REJECT
-DOMAIN-KEYWORD,aotter,REJECT
 DOMAIN-KEYWORD,app-measurement,REJECT
 DOMAIN-KEYWORD,applovin,REJECT
 DOMAIN-KEYWORD,appsflyer,REJECT
