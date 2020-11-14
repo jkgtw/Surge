@@ -1,6 +1,5 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20200909.01
-#!system=ios
+#!desc=狙殺常見廣告（需手動更新外部資源） v20201114.01
 
 [Rule]
 DOMAIN,itad.linetv.tw,REJECT
