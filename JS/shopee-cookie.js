@@ -5,7 +5,7 @@
 安裝啟用後，請使用瀏覽器到以下網址進行登入，保存 Cookie
 https://shopee.tw/me/setting
 
-shopee-cookie.js = type=http-request,pattern=^https:\/\/shopee\.tw\/me\/setting,script-path=shopee-cookie.js,script-update-interval=-1
+shopee-cookie.js = type=http-request,pattern=^https:\/\/shopee\.tw\/me\/setting,script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-cookie.js,script-update-interval=-1
 
 MITM = shopee.tw
 */
