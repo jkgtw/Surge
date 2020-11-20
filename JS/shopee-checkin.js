@@ -35,6 +35,7 @@ $notification.post("蝦皮 " + user + " 已連續簽到 " + checkinday + " 天",
 }
 else{
 $notification.post("蝦皮 Cookie 已過期‼️", "", "請重新登入 🔓");
+$done();
 }
 }
 });
