@@ -1,9 +1,9 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20201114.01
+#!desc=狙殺常見廣告（需手動更新外部資源） v20210113.01
 
 [Rule]
 DOMAIN,itad.linetv.tw,REJECT
-DOMAIN,sessions.bugsnag.com,REJECT
+DOMAIN,sessions.bugsnag.com,REJECT-DROP
 DOMAIN-KEYWORD,admarvel,REJECT
 DOMAIN-KEYWORD,admaster,REJECT
 DOMAIN-KEYWORD,admdfs,REJECT
@@ -26,7 +26,7 @@ DOMAIN-KEYWORD,analytics,REJECT
 DOMAIN-KEYWORD,app-measurement,REJECT
 DOMAIN-KEYWORD,applovin,REJECT
 DOMAIN-KEYWORD,appsflyer,REJECT
-DOMAIN-KEYWORD,crashlytics,REJECT
+DOMAIN-KEYWORD,crashlytics,REJECT-DROP
 DOMAIN-KEYWORD,dnserror,REJECT
 DOMAIN-KEYWORD,domob,REJECT
 DOMAIN-KEYWORD,doubleclick,REJECT
