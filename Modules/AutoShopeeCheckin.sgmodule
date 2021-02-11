@@ -1,5 +1,5 @@
 #!name=Auto Shopee Checkin
-#!desc=每天早上 7 點自動簽到（需手動先保存 Cookie）
+#!desc=每天早上七點自動簽到（需先手動保存 Cookie）v20210211
 
 [Script]
 cron "0 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-checkin.js
