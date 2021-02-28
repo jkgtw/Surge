@@ -3,8 +3,8 @@
 # https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/basic/hosts.txt
 # https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 # 只適用 Surge v4.2.2 以上版本
-# Version: 20210113.01
-# Number of domains: 11909
+# Version: 20210228.01
+# Number of domains: 11908
 .0.r.msn.com
 .001.0x1f4b0.com
 .002.0x1f4b0.com
@@ -2095,7 +2095,6 @@
 .app.datorama.com
 .app.games-to-run123.com
 .app.iappgame.com
-.app.link
 .app.marketo.com
 .app.matheranalytics.com
 .app.meltwater.com
