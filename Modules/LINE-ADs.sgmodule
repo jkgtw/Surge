@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20210211.01
+#!desc=刪掉 LINE 惱人的廣告 v20210513.01
 #!system=ios
 
 [Rule]
@@ -12,12 +12,13 @@ URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT-DROP
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png),REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT-DROP
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/,REJECT-DROP
 URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT-DROP
+URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/event$,REJECT
 
 [MITM]
-hostname = %APPEND% a.line.me, w.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me
+hostname = %APPEND% a.line.me, w.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me, uts-front.line-apps.com
