@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20210718.01
+#!desc=刪掉 LINE 惱人的廣告 v20210718.02 - 實驗性更新，如有影響正常使用請回報。
 #!system=ios
 
 [Rule]
