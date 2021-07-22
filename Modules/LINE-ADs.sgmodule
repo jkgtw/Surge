@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20210718.02 - 實驗性更新，如有影響正常使用請回報。
+#!desc=刪掉 LINE 惱人的廣告 v20210722.01 - 實驗性更新，如有影響正常使用請回報。
 #!system=ios
 
 [Rule]
@@ -10,7 +10,7 @@ URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT-DROP
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
-URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT
+URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$,REJECT-DROP
@@ -19,10 +19,10 @@ URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJ
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT-DROP
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/,REJECT-DROP
 URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT-DROP
-URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/event$,REJECT
-URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/settings$,REJECT
+URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/event$,REJECT-DROP
+URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/settings$,REJECT-DROP
 URL-REGEX,^https:\/\/static\.line-scdn\.net\/liff\/edge\/2\/ios-extensions\.js$,REJECT
-URL-REGEX,^https:\/\/static\.line-scdn\.net\/liff\/edge\/2\.1\/sdk\.js$,REJECT
+URL-REGEX,^https:\/\/static\.line-scdn\.net\/ad-sdk\/,REJECT
 URL-REGEX,^https:\/\/nelo2-col\.linecorp\.com\/_store$,REJECT
 
 [MITM]
