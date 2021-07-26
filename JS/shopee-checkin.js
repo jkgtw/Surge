@@ -29,7 +29,7 @@ if(obj["data"]["success"])
 var user = obj["data"]["username"];
 var coins = obj["data"]["increase_coins"];
 var checkinday = obj["data"]["check_in_day"];
-$notification.post("蝦皮 " + user + " 已連續簽到 " + checkinday + " 天", "", "今日已領取 " + coins + "💰💰💰");
+$notification.post("蝦皮購物 " + user + " 已連續簽到 " + checkinday + " 天", "", "今日已領取：" + coins + " 蝦幣 💰💰💰");
     $done();
 }
 }
