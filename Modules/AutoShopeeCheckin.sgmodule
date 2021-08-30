@@ -1,10 +1,11 @@
 #!name=Auto Shopee Checkin
-#!desc=每天早上七點自動簽到（每七天需手動保存 Cookie）v20210725
+#!desc=每天早上自動蝦皮簽到、領蝦幣寶箱（每七天需手動保存 Cookie）v20210831
 
 [Script]
 cron "0 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-checkin.js, wake-system=1, timeout=30
+cron "1 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-luckydraw.js, wake-system=1, timeout=30
 shopee-cookie.js = type=http-request,pattern=^https:\/\/shopee\.tw\/me\/setting,script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-cookie.js,script-update-interval=-1
 shopee-loyalty-cookie.js = type=http-request,pattern=^https:\/\/loyalty\.shopee\.tw\/api\/v1\/coins$,script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-cookie.js,script-update-interval=-1
 
 [MITM]
-hostname = %APPEND% shopee.tw, loyalty.shopee.tw
+hostname = %APPEND% loyalty.shopee.tw
