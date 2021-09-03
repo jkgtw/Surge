@@ -22,7 +22,7 @@ hostname = %APPEND% loyalty.shopee.tw
   }
 $httpClient.post(shopeeUrl, function(error, response, data){
   if (error) {
-    $notification.post("蝦皮簽到", "", "連線錯誤‼️")
+    $notification.post("🍤 蝦皮簽到", "", "連線錯誤‼️")
     $done(); 
   } 
   else{
@@ -34,18 +34,18 @@ $httpClient.post(shopeeUrl, function(error, response, data){
       var user = obj["data"]["username"];
       var coins = obj["data"]["increase_coins"];
       var checkinday = obj["data"]["check_in_day"];
-      $notification.post("蝦皮購物 " + user + " 已連續簽到 " + checkinday + " 天", "", "今日已領取：" + coins + " 蝦幣 💰💰💰");
+      $notification.post("🍤 蝦皮購物 " + user + " 已連續簽到 " + checkinday + " 天 ✅", "", "獲得 👉 " + coins + " 蝦幣 💰💰💰");
       $done();
     }
     else if(obj["data"]["success"] == false)
     {
-      $notification.post("今日蝦皮已簽到，每日只能簽到一次‼️", "", "");
+      $notification.post("🍤 今日蝦皮已簽到，每日只能簽到一次‼️", "", "");
       $done();
     }
   $done();
   }
 else{
-  $notification.post("蝦皮 Cookie 已過期‼️", "", "請重新抓取 🔓");
+  $notification.post("🍤 蝦皮 Cookie 已過期‼️", "", "請重新抓取 🔓");
   $done();
   }
   }
