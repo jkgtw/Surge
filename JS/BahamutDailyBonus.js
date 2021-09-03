@@ -36,10 +36,10 @@ cron "0 8 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/mas
 const $ = new Env('巴哈姆特');
 
 // 用戶名
-$.uid = $.getdata('@ND_BAHA.ID') || '';
+$.uid = $.getdata('@ND_BAHA.ID') || 'YourUserName';
 
 // 用戶密碼
-$.pwd = $.getdata('@ND_BAHA.PW') || '';
+$.pwd = $.getdata('@ND_BAHA.PW') || 'YourUserPassword';
 
 // 兩步驗證Token, 16位數, 未設置請保持默認
 $.totp = $.getdata('@ND_BAHA.TOTP') || '';
