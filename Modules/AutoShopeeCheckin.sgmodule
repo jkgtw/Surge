@@ -1,5 +1,5 @@
 #!name=Auto Shopee Checkin
-#!desc=每天早上自動蝦皮簽到、領蝦幣寶箱（每七天需手動保存 Cookie）v20210831
+#!desc=每天早上自動蝦皮簽到、領蝦幣寶箱（每七天需手動保存 Cookie）v20210903
 
 [Script]
 cron "0 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-checkin.js, wake-system=1, timeout=30
