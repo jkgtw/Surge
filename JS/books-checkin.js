@@ -10,6 +10,10 @@ $httpClient.post(booksUrl, function(error, response, data){
     $done(); 
   }
   else {
+    if(response.status == 302) {
+      $notification.post("📗 博客來", "", "簽到 Cookie 遇到未知問題，請重新抓取 Cookie ❌") ;
+      $done();
+    }
     if(response.status == 200) {
      let obj= JSON.parse(data);
      var checkmsg = obj["msg"]
