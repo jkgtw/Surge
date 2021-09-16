@@ -1,6 +1,7 @@
   var booksUrl = {
     url: 'https://myaccount.books.com.tw/myaccount/reader/dailySignIn/?ru=P5zqo53d',
     headers: {
+      Host: "myaccount.books.com.tw",
       Cookie: $persistentStore.read("CookieBooks"),
     }
   }
@@ -9,12 +10,7 @@ $httpClient.post(booksUrl, function(error, response, data){
     $notification.post("📗 博客來簽到", "", "連線錯誤‼️")
     $done(); 
   }
-  else {
-    if(response.status == 302) {
-      $notification.post("📗 博客來", "", "簽到 Cookie 遇到未知問題，請重新抓取 Cookie ❌") ;
-      $done();
-    }
-    if(response.status == 200) {
+  else if(response.status == 200) {
      let obj= JSON.parse(data);
      var checkmsg = obj["msg"]
      if(obj["status"] == "success") {
@@ -35,5 +31,4 @@ $httpClient.post(booksUrl, function(error, response, data){
     $notification.post("📗 博客來 Cookie 已過期‼️", "", "請重新抓取 🔓");
     $done();
   }
-  }
-});
+  });
