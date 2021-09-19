@@ -1,35 +1,34 @@
-function Booksupdatelpk() {
-  var updatelpkUrl = {
-    url: "https://myaccount.books.com.tw/myaccount/myaccount/getReorder",
-    headers: {
-      Cookie: $persistentStore.read("CookieBooks"),
-      "User-Agent":
-        "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 AppVersion:1.0.0 ios_app_shop_ajknrs_2020 support_linepay newAppleLogin",
-    },
-  };
-  $httpClient.get(updatelpkUrl, function (error, response, data) {
-    if (error) {
-      $notification.post("📗 博客來 lpk", "", "連線錯誤‼️");
-      $done();
-    } else {
-      if (response.status == 200 && response.headers["Set-Cookie"]) {
-        var bookslpk = $persistentStore.write(
-          response.headers["Set-Cookie"].split("lpk=")[1].split(";")[0],
-          "lpkBooks"
-        );
-        if (bookslpk) {
-          Bookscheckin();
-        } else {
-          $notification.post("📗 博客來 lpk", "", "刷新失敗‼️");
-        }
-        $done();
+var updatelpkUrl = {
+  url: "https://myaccount.books.com.tw/myaccount/myaccount/getReorder",
+  headers: {
+    Cookie: $persistentStore.read("CookieBooks"),
+    "User-Agent":
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 AppVersion:1.0.0 ios_app_shop_ajknrs_2020 support_linepay newAppleLogin",
+  },
+};
+
+$httpClient.get(updatelpkUrl, function (error, response, data) {
+  if (error) {
+    $notification.post("📗 博客來 lpk", "", "連線錯誤‼️");
+    $done();
+  } else {
+    if (response.status == 200 && response.headers["Set-Cookie"]) {
+      var bookslpk = $persistentStore.write(
+        response.headers["Set-Cookie"].split("lpk=")[1].split(";")[0],
+        "lpkBooks"
+      );
+      if (bookslpk) {
+        Bookscheckin();
       } else {
         $notification.post("📗 博客來 lpk", "", "刷新失敗‼️");
-        $done();
       }
+      $done();
+    } else {
+      $notification.post("📗 博客來 lpk", "", "刷新失敗‼️");
+      $done();
     }
-  });
-}
+  }
+});
 
 function Bookscheckin() {
   var booksUrl = {
@@ -67,5 +66,3 @@ function Bookscheckin() {
     }
   });
 }
-
-Booksupdatelpk();
