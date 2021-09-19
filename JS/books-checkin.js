@@ -12,7 +12,7 @@ function Booksupdatelpk() {
       $done();
     }
     else {
-      if(response.status == 200) {
+      if(response.status == 200 && response.headers['Set-Cookie']) {
         var bookslpk = $persistentStore.write(response.headers['Set-Cookie'].split('lpk=')[1].split(';')[0], 'lpkBooks');
         if(bookslpk) {
           Bookscheckin();
@@ -22,7 +22,10 @@ function Booksupdatelpk() {
         }
         $done();
       }
-      $done();
+      else {
+        $notification.post("📗 博客來 lpk", "", "刷新失敗‼️")
+        $done();
+    }
     }
 })
 }
