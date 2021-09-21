@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20210623.01
+#!desc=狙殺常見廣告（需手動更新外部資源） v20210921.01
 
 [Rule]
 DOMAIN,itad.linetv.tw,REJECT
@@ -76,3 +76,4 @@ DOMAIN-KEYWORD,wlmonitor,REJECT
 DOMAIN-KEYWORD,whalecloud,REJECT
 DOMAIN-KEYWORD,zjtoolbar,REJECT
 RULE-SET,https://github.com/TPCTPCTPC/Adblock-gist/raw/master/Supplement%20for%20anti-AD/Suffixes.list,REJECT
+RULE-SET,https://cdn.jsdelivr.net/gh/geekdada/surge-list/domain-set/neohosts.txt,REJECT
