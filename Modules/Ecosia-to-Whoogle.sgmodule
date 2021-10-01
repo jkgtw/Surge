@@ -1,0 +1,9 @@
+#!name=Ecosia to Whoogle
+#!desc=把 Ecosia 搜尋轉址到 whoogle.hasname.com
+
+[URL Rewrite]
+^https://ac\.ecosia\.org\/autocomplete https://whoogle.hasname.com/autocomplete 307
+^https:\/\/www\.ecosia\.org\/search https://whoogle.hasname.com/search 307
+
+[MITM]
+hostname = %APPEND% ac.ecosia.org, www.ecosia.org
