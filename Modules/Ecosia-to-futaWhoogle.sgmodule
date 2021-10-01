@@ -1,0 +1,11 @@
+#!name=Ecosia to Whoogle
+#!desc=把 Ecosia 搜尋轉址到 whoogle.futa.gg
+// src https://blog.gslin.org/archives/2021/09/12/10317/弄個-whoogle-hasname-com-給大家玩/
+// src https://beeeeemo.dev/2021/10/利用-quantumult-x-更換-safari-搜尋引擎/
+
+[URL Rewrite]
+^https://ac\.ecosia\.org\/autocomplete https://whoogle.futa.gg/autocomplete 307
+^https:\/\/www\.ecosia\.org\/search https://whoogle.futa.gg/search 307
+
+[MITM]
+hostname = %APPEND% ac.ecosia.org, www.ecosia.org
