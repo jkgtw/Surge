@@ -1,7 +1,8 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20210921.02
+#!desc=狙殺常見廣告（需手動更新外部資源） v20211124.01
 
 [Rule]
+DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
 DOMAIN,itad.linetv.tw,REJECT
 DOMAIN,sessions.bugsnag.com,REJECT-DROP
 DOMAIN-KEYWORD,51yes,REJECT
