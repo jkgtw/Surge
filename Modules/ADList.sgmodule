@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20211221.03
+#!desc=狙殺常見廣告（需手動更新外部資源） v20220106.01
 
 [Rule]
 DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
@@ -70,7 +70,6 @@ DOMAIN-KEYWORD,tapjoyads,REJECT
 DOMAIN-KEYWORD,telemetry,REJECT
 DOMAIN-KEYWORD,tingyun,REJECT
 DOMAIN-KEYWORD,uedas,REJECT
-DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-KEYWORD,umtrack,REJECT
 DOMAIN-KEYWORD,unidesk,REJECT
 DOMAIN-KEYWORD,wlmonitor,REJECT
