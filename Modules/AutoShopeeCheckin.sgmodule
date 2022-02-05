@@ -1,9 +1,12 @@
 #!name=Auto Shopee Checkin
-#!desc=每天早上自動蝦皮簽到、領蝦幣寶箱（每七天需手動保存 Cookie）v20210903
+#!desc=每天自動蝦皮簽到、領蝦幣寶箱、水滴任務（每七天需手動保存 Cookie）v20220205
 
 [Script]
-cron "0 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-checkin.js, wake-system=1, timeout=30
-cron "1 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-luckydraw.js, wake-system=1, timeout=30
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-checkin.js, wake-system=1, timeout=5
+cron "1 7 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-luckydraw.js, wake-system=1, timeout=5
+cron "19 0 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-watercheckin.js, wake-system=1, timeout=5
+cron "25 4 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-watercheckin.js, wake-system=1, timeout=5
+cron "39 8 * * *" script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-watercheckin.js, wake-system=1, timeout=5
 shopee-loyalty-cookie.js = type=http-request,pattern=^https:\/\/loyalty\.shopee\.tw\/api\/v1\/coins$,script-path=https://raw.githubusercontent.com/jkgtw/Surge/master/JS/shopee-cookie.js,script-update-interval=-1
 
 [MITM]
