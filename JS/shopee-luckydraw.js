@@ -14,7 +14,7 @@ hostname = %APPEND% loyalty.shopee.tw
 */
 
 var shopeeluckydrawUrl = {
-  url: "https://games.shopee.tw/luckydraw/api/v1/lucky/event/9e1941bb20a51f73",
+  url: "https://games.shopee.tw/luckydraw/api/v1/lucky/event/6db700ed40b23f26",
   headers: {
     Cookie: $persistentStore.read("CookieSP"),
     "User-Agent":
