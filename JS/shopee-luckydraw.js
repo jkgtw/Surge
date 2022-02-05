@@ -17,8 +17,6 @@ var shopeeluckydrawUrl = {
   url: "https://games.shopee.tw/luckydraw/api/v1/lucky/event/6db700ed40b23f26",
   headers: {
     Cookie: $persistentStore.read("CookieSP"),
-    "User-Agent":
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Beeshop locale=zh-Hant version=28219 appver=28219 rnver=1643196647 shopee_rn_bundle_version=5028009 Shopee language=zh-Hant app_type=1",
   },
   body: {
     request_id: (Math.random() * 10 ** 20).toFixed(0).substring(0, 16),
