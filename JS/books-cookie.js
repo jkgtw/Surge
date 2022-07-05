@@ -1,4 +1,4 @@
-var headerBooks = $request.headers['Cookie'] || $request.headers['cookie'];
+const headerBooks = $request.headers['Cookie'] || $request.headers['cookie'];
 if (headerBooks) {
   var lpkBooks = headerBooks.indexOf("lpk=");
   if (lpkBooks > 0) {
