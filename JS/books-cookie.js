@@ -1,5 +1,5 @@
-if ($request.headers["Cookie"]) {
-  var headerBooks = $request.headers["Cookie"];
+if ($request.headers["Cookie"] || $request.headers["cookie"]) {
+  var headerBooks = $request.headers["Cookie"] || $request.headers["cookie"];
   var lpkBooks = headerBooks.indexOf("lpk=");
   if (lpkBooks > 0) {
     $done({});
