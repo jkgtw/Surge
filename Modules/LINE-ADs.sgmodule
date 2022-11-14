@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20210902.01 - 實驗性更新，如有影響正常使用請回報。
+#!desc=刪掉 LINE 惱人的廣告 v20221114.01 - 需啟用 MitM over HTTP/2
 #!system=ios
 
 [Rule]
@@ -8,6 +8,7 @@ URL-REGEX,^https:\/\/a\.line\.me\/er\/la(ss|dg)\/v\d\/event\/image,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT-DROP
+URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$,REJECT-DROP
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT-DROP
@@ -26,4 +27,4 @@ URL-REGEX,^https:\/\/static\.line-scdn\.net\/ad-sdk\/,REJECT
 URL-REGEX,^https:\/\/nelo2-col\.linecorp\.com\/_store$,REJECT
 
 [MITM]
-hostname = %APPEND% a.line.me, w.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, cix.line-apps.com, d.line-scdn.net, scdn.line-apps.com, sch.line.me, uts-front.line-apps.com, static.line-scdn.net, nelo2-col.linecorp.com
+hostname = %APPEND% a.line.me, w.line.me, gw.line.naver.jp, buy.line.me, crs-event.line.me, obs.line-scdn.net, cix.line-apps.com, d.line-scdn.net, scdn.line-apps.com, sch.line.me, uts-front.line-apps.com, static.line-scdn.net, nelo2-col.linecorp.com
