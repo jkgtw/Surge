@@ -297,7 +297,7 @@ function StartSearchAnswers(id) { //獲取文章內答案
 		})
 		.then((res) => { //網絡請求成功後的處理
 			const body = JSON.parse(res.body); //解析響應體json為對象
-			const answers = body.content.split(/A:(\d)/)[1]; //正則提取答案
+			const answers = body.content.split(/A[:;：](\d)/)[1]; //正則提取答案
 			if (answers) { //如果成功提取答案
 				$.log('', `✅獲取答案成功 (${answers})`); //打印日誌
 				return answers; //返回答案
