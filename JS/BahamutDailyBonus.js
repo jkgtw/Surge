@@ -48,10 +48,13 @@ $.totp = $.getdata('@ND_BAHA.TOTP') || '';
 $.needSignAds = $.getdata('@ND_BAHA.ADS') || false;
 
 // 是否自動簽到公會，true/false，默認開啓
-$.needSignGuild = $.getdata('@ND_BAHA.GUILD') || false;
+$.needSignGuild = $.getdata('@ND_BAHA.GUILD') || true;
 
 // 是否自動答題動畫瘋，true/false，默認開啓 (不保證100%答題正確)
 $.needAnswer = $.getdata('@ND_BAHA.ANSWER') || true;
+
+//Bark APP 通知推送Key
+$.barkKey = '';
 
 // 為通知準備的空數組
 $.notifyMsg = [];
@@ -62,43 +65,55 @@ $.notifyMsg = [];
 	await BahamutSign(); //簽到巴哈
 	await BahamutAnswer(); //動畫瘋答題
 })().catch((e) => $.notifyMsg.push(e.message || e)) //捕獲登錄函數等拋出的異常, 並把原因添加到全局變量(通知)
-	.finally(() => { //finally在catch之後無論有無異常都會執行
-		$.msg(`🐉 巴哈姆特`, ``, $.notifyMsg.join('\n'), {
+	.finally(async () => { //finally在catch之後無論有無異常都會執行
+		if ($.barkKey) { //如果已填寫Bark Key
+			await BarkNotify($, $.barkKey, $.name, $.notifyMsg.join('\n')); //推送Bark通知
+		};
+		$.msg($.name, ``, $.notifyMsg.join('\n'), {
 			'open-url': 'crazyanime://', //動畫瘋url scheme
 			'media-url': 'https://cdn.jsdelivr.net/gh/NobyDa/mini@master/Color/bahamutClear.png' //通知圖片
 		}); //帶上總結推送通知
 		$.done(); //調用Surge、QX內部特有的函數, 用於退出腳本執行
 	});
 
-function BahamutLogin(retry) { //登錄函數，拿到Set-Cookie
+async function BahamutLogin(retry = 3, interval = 1000) { //登錄函數，拿到Set-Cookie
 
 	//登錄成功: {"success":true,"userid":"DGIE","nickname":"coco","gold":152769,"gp":0,"avatar":"https:\/\/avatar2.bahamut.com.tw\/avataruserpic\/dgie.png","avatar_s":"https:\/\/avatar2.bahamut.com.tw\/avataruserpic\/dgie_s.png","lv":6}
 	//賬號錯誤: {"code":0,"message":"查無此人：SDFOUGB"}
 	//密碼錯誤: {"code":0,"message":"帳號、密碼或驗證碼錯誤！"}
 	//驗證碼錯誤: {"code":0,"message":"驗證碼錯誤"}
 
-	return $.http.post({ //使用post請求查詢 (兼容函數實際上返回Promise實例對象,以便後續調用時可以實現順序執行異步函數)
+	for (let i = 0; i < retry; i++) { //循環登錄(默認三次)
+		if (i > 0) {
+			$.log('', `🔶嘗試第 ${i+1} 次登錄...`);
+			await $.wait(interval); //延遲一秒
+		};
+		const reqUrl = {
 			url: 'https://api.gamer.com.tw/mobile_app/user/v3/do_login.php', //登錄接口
 			headers: { //請求頭
 				'Cookie': 'ckAPP_VCODE=6666' //Cookie中的ckAPP_VCODE為必須
 			},
 			//請求體放入用戶名和密碼，並把它uri編碼
 			body: `uid=${encodeURIComponent($.uid)}&passwd=${encodeURIComponent($.pwd)}&vcode=6666${$.totp?`&twoStepAuth=${TOTP($.totp)}`:``}`
-		})
-		.then(async (resp) => { //請求成功的處理
-			const body = JSON.parse(resp.body); //解析響應體json為對象
-			if (body.userid) { //如果成功返回用戶信息
-				$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=\w+)/)[1];
-				$.log('', `✅巴哈姆特登錄成功`); // 打印日誌
-			} else if (!retry && body.message.includes('驗證碼錯誤')) { //如果首次登陸並且一次性密碼失效
-				$.log('', `❌登錄失敗, 3秒後重試`); // 打印日誌
-				await $.wait(3000); //等待三秒
-				await BahamutLogin(true); //重新執行登錄函數, 帶上參數避免死循環
-			} else { //否則登錄失敗 (例如密碼錯誤)
-				const failMsg = body.error ? body.error.message : null; //判斷簽到失敗原因
-				throw new Error(`❌登錄失敗\n❌${body.message||failMsg||'未知'}`); //帶上原因拋出異常, 腳本結束
-			}
-		}) //未寫catch，如果登錄失敗，例如無法聯網、密碼錯誤等, 則被調用該函數時的catch捕獲，腳本結束
+		};
+		const res = await $.http.post(reqUrl) //使用post請求查詢 (兼容函數實際上返回Promise實例對象,以便後續調用時可以實現順序執行異步函數)
+			.then(async (resp) => { //請求成功的處理
+				const body = JSON.parse(resp.body); //解析響應體json為對象
+				if (body.userid) { //如果成功返回用戶信息
+					$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=\w+)/)[1];
+					return `✅巴哈姆特登錄成功`;
+				} else { //否則登錄失敗 (例如密碼錯誤)
+					const failMsg = body.error ? body.error.message : null; //判斷簽到失敗原因
+					throw new Error(`${body.message||failMsg||'原因未知'}`); //帶上原因拋出異常
+				}
+			}).catch((err) => `❌登錄失敗\n❌${err.message || err}`);
+		$.log('', res.message || res);
+		if (res === `✅巴哈姆特登錄成功`) {
+			break; //登錄成功則跳出循環
+		} else if (retry == i + 1) { //如果最後一次重試仍登錄失敗
+			throw new Error(res.message || res); //拋出錯誤, 被調用該函數時的catch捕獲, 腳本結束.
+		}
+	}
 }
 
 function BahamutSign() { //查詢巴哈姆特簽到Token
@@ -109,14 +124,14 @@ function BahamutSign() { //查詢巴哈姆特簽到Token
 			if (resp.body) { //如果簽到Token獲取成功
 				$.log('', '✅獲取簽到令牌成功'); //打印日誌
 				const sign = await StartSignBahamut(resp.body); //帶上Token開始簽到
-				$.notifyMsg.push(`首頁簽到：成功 ✅ 已連續簽到 ${sign} 天❗️`); //添加到全局變量備用 (通知)
+				$.notifyMsg.push(`首頁簽到: 成功, 已連續簽到 ${sign} 天`); //添加到全局變量備用 (通知)
 				await StartAdsBonus(resp.body.slice(0, 16), 'start'); //執行廣告簽到
 			} else { //否則拋出異常
 				throw new Error('獲取簽到令牌失敗'); //帶上原因被下面catch捕獲
 			}
 		})
 		.catch(err => {
-			$.notifyMsg.push(`首頁簽到：${err.message||err}`); //添加到全局變量備用 (通知)
+			$.notifyMsg.push(`首頁簽到: ${err.message||err}`); //添加到全局變量備用 (通知)
 			$.log('', `❌巴哈姆特簽到失敗`, `❌${err.message||err}`);
 		}); // 捕獲異常, 打印日誌
 }
@@ -164,14 +179,14 @@ function StartAdsBonus(token, type) {
 				await StartAdsBonus(token, 'finished'); //領取獎勵函數
 			} else if (body.data && body.data.finished == 1) { //如果廣告獎勵領取成功
 				$.log('', '✅領取廣告獎勵成功'); //打印日誌
-				$.notifyMsg.push('廣告簽到：成功 ✅ 已領取雙倍簽到獎勵‼️'); //添加到全局變量備用 (通知)
+				$.notifyMsg.push('廣告簽到: 成功, 已領取雙倍簽到獎勵'); //添加到全局變量備用 (通知)
 			} else {
 				const failMsg = body.error ? body.error.message : null; //判斷簽到失敗原因
 				throw new Error(failMsg || body.message || '未知'); //帶上原因拋出異常
 			}
 		})
 		.catch(err => {
-			$.notifyMsg.push(`廣告簽到：${err.message||err}`); //添加到全局變量備用 (通知)
+			$.notifyMsg.push(`廣告簽到: ${err.message||err}`); //添加到全局變量備用 (通知)
 			$.log('', `❌廣告獎勵簽到失敗`, `❌${err.message||err}`);
 		}); // 捕獲異常, 打印日誌
 }
@@ -199,13 +214,13 @@ function BahamutGuildSign() { //巴哈姆特查詢公會列表
 				const sucs = sign.filter(n => n === 1).length; //過濾後得到成功數量
 				const fail = sign.filter(n => n === 0).length; //過濾後得到失敗數量
 				//添加到全局變量備用 (通知)
-				$.notifyMsg.push(`公會簽到：${sucs?`成功${sucs}個`:``}${sucs&&fail?`, `:``}${fail?`失敗${fail}個`:``}`);
+				$.notifyMsg.push(`公會簽到: ${sucs?`成功${sucs}個`:``}${sucs&&fail?`, `:``}${fail?`失敗${fail}個`:``}`);
 			} else {
 				throw new Error('公會列表為空'); //無公會列表則拋出異常
 			}
 		})
 		.catch(err => { //捕獲異常, 打印日誌
-			$.notifyMsg.push(`公會簽到：${err.message || err}`); //添加到全局變量備用 (通知)
+			$.notifyMsg.push(`公會簽到: ${err.message || err}`); //添加到全局變量備用 (通知)
 			$.log('', `❌巴哈姆特公會簽到失敗`, `❌${err.message || err}`); //打印日誌
 		});
 }
@@ -233,7 +248,7 @@ function StartSignGuild(v) { //巴哈姆特公會簽到
 			}
 		})
 		.catch(e => { //捕獲異常, 打印日誌
-			$.log('', `🔷<${v.name}>`, `❌簽到失敗：${e.message||e}`);
+			$.log('', `🔷<${v.name}>`, `❌簽到失敗: ${e.message||e}`);
 			return 0; //返回0表示失敗
 		});
 }
@@ -259,13 +274,13 @@ function BahamutAnswer() { //動畫瘋答題
 				const article = await GetAanswerArticles(); //獲取答案文章ID
 				const getAnswer = await StartSearchAnswers(article); //傳入文章ID, 再從文章內獲取答案
 				const sendAnswer = await StartBahamutAnswer(getAnswer, r.token); //傳入答案和題目令牌, 開始答題
-				$.notifyMsg.push(`動畫答題：${sendAnswer}‼️`); //答題後的結果添加到全局變量備用 (通知)
+				$.notifyMsg.push(`動畫答題: ${sendAnswer}`); //答題後的結果添加到全局變量備用 (通知)
 			} else { //未獲取到題目
 				throw new Error(r.msg || `獲取題目失敗`); //帶上原因拋出異常
 			}
 		})
 		.catch(e => { //捕獲異常, 打印日誌
-			$.notifyMsg.push(`動畫答題：${e.message||e||`失敗`}`); //添加到全局變量備用 (通知)
+			$.notifyMsg.push(`動畫答題: ${e.message||e||`失敗`}`); //添加到全局變量備用 (通知)
 			$.log('', `❌動畫瘋答題失敗`, `❌${e.message||e}`); //打印日誌
 		});
 }
@@ -332,6 +347,9 @@ function StartBahamutAnswer(answer, token) { //動畫瘋答題
 			}
 		})
 }
+
+//Bark APP notify
+async function BarkNotify(c,k,t,b){for(let i=0;i<3;i++){console.log(`🔷Bark notify >> Start push (${i+1})`);const s=await new Promise((n)=>{c.post({url:'https://api.day.app/push',headers:{'Content-Type':'application/json'},body:JSON.stringify({title:t,body:b,device_key:k,ext_params:{group:t}})},(e,r,d)=>r&&r.status==200?n(1):n(d||e))});if(s===1){console.log('✅Push success!');break}else{console.log(`❌Push failed! >> ${s.message||s}`)}}};
 
 //修改自 https://github.com/chavyleung/scripts/blob/master/Env.js 的兼容函數
 function Env(t,e){class s{constructor(t){this.env=t}send(t,e="GET"){t="string"==typeof t?{url:t}:t;let s=this.get;return"POST"===e&&(s=this.post),new Promise((e,i)=>{s.call(this,t,(t,s,r)=>{t?i(t):e(s)})})}get(t){return this.send.call(this.env,t)}post(t){return this.send.call(this.env,t,"POST")}}return new class{constructor(t,e){this.name=t,this.http=new s(this),this.data=null,this.dataFile="box.dat",this.ua="Anime/2.13.9 (tw.com.gamer.anime;build:437;iOS 14.5.0) Alamofire/5.4.1",this.logs=[],this.isMute=!1,this.isNeedRewrite=!0,this.logSeparator="\n",this.startTime=(new Date).getTime(),Object.assign(this,e),this.log("",`\ud83d\udd14${this.name}`)}isNode(){return"undefined"!=typeof module&&!!module.exports}isQuanX(){return"undefined"!=typeof $task}isSurge(){return"undefined"!=typeof $httpClient&&"undefined"==typeof $loon}isLoon(){return"undefined"!=typeof $loon}isShadowrocket(){return"undefined"!=typeof $rocket}toObj(t,e=null){try{return JSON.parse(t)}catch{return e}}toStr(t,e=null){try{return JSON.stringify(t)}catch{return e}}getjson(t,e){let s=e;const i=this.getdata(t);if(i)try{s=JSON.parse(this.getdata(t))}catch{}return s}setjson(t,e){try{return this.setdata(JSON.stringify(t),e)}catch{return!1}}getScript(t){return new Promise(e=>{this.get({url:t},(t,s,i)=>e(i))})}runScript(t,e){return new Promise(s=>{let i=this.getdata("@chavy_boxjs_userCfgs.httpapi");i=i?i.replace(/\n/g,"").trim():i;let r=this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");r=r?1*r:20,r=e&&e.timeout?e.timeout:r;const[o,h]=i.split("@"),a={url:`http:\/\/${h}/v1/scripting/evaluate`,body:{script_text:t,mock_type:"cron",timeout:r},headers:{"X-Key":o,Accept:"*/*"}};this.post(a,(t,e,i)=>s(i))}).catch(t=>this.logErr(t))}loaddata(){if(!this.isNode())return{};{this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e);if(!s&&!i)return{};{const i=s?t:e;try{return JSON.parse(this.fs.readFileSync(i))}catch(t){return{}}}}}writedata(){if(this.isNode()){this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e),r=JSON.stringify(this.data);s?this.fs.writeFileSync(t,r):i?this.fs.writeFileSync(e,r):this.fs.writeFileSync(t,r)}}lodash_get(t,e,s){const i=e.replace(/\[(\d+)\]/g,".$1").split(".");let r=t;for(const t of i)if(r=Object(r)[t],void 0===r)return s;return r}lodash_set(t,e,s){return Object(t)!==t?t:(Array.isArray(e)||(e=e.toString().match(/[^.[\]]+/g)||[]),e.slice(0,-1).reduce((t,s,i)=>Object(t[s])===t[s]?t[s]:t[s]=Math.abs(e[i+1])>>0==+e[i+1]?[]:{},t)[e[e.length-1]]=s,t)}getdata(t){let e=this.getval(t);if(/^@/.test(t)){const[,s,i]=/^@(.*?)\.(.*?)$/.exec(t),r=s?this.getval(s):"";if(r)try{const t=JSON.parse(r);e=t?this.lodash_get(t,i,""):e}catch(t){e=""}}return e}setdata(t,e){let s=!1;if(/^@/.test(e)){const[,i,r]=/^@(.*?)\.(.*?)$/.exec(e),o=this.getval(i),h=i?"null"===o?null:o||"{}":"{}";try{const e=JSON.parse(h);this.lodash_set(e,r,t),s=this.setval(JSON.stringify(e),i)}catch(e){const o={};this.lodash_set(o,r,t),s=this.setval(JSON.stringify(o),i)}}else s=this.setval(t,e);return s}getval(t){return this.isSurge()||this.isLoon()?$persistentStore.read(t):this.isQuanX()?$prefs.valueForKey(t):this.isNode()?(this.data=this.loaddata(),this.data[t]):this.data&&this.data[t]||null}setval(t,e){return this.isSurge()||this.isLoon()?$persistentStore.write(t,e):this.isQuanX()?$prefs.setValueForKey(t,e):this.isNode()?(this.data=this.loaddata(),this.data[e]=t,this.writedata(),!0):this.data&&this.data[e]||null}initGotEnv(t){this.got=this.got?this.got:require("got"),this.cktough=this.cktough?this.cktough:require("tough-cookie"),this.ckjar=this.ckjar?this.ckjar:new this.cktough.CookieJar,t&&(t.headers=t.headers?t.headers:{},((void 0===t.headers.Cookie||/ckAPP_VCODE/.test(t.headers.Cookie))&&void 0===t.cookieJar)&&(t.cookieJar=this.ckjar))}get(t,e=(()=>{})){t.headers&&(t.headers["User-Agent"]=this.ua,delete t.headers["Content-Type"],delete t.headers["Content-Length"]),this.isSurge()||this.isLoon()?(this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.get(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)})):this.isQuanX()?(this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t))):this.isNode()&&(this.initGotEnv(t),this.got(t).on("redirect",(t,e)=>{try{if(t.headers["set-cookie"]){const s=t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();s&&this.ckjar.setCookieSync(s,null),e.cookieJar=this.ckjar}}catch(t){this.logErr(t)}}).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)}))}post(t,e=(()=>{})){const s=t.method?t.method.toLocaleLowerCase():"post";if(t.body&&t.headers&&!t.headers["Content-Type"]&&(t.headers["Content-Type"]="application/x-www-form-urlencoded"),t.headers&&(t.headers["User-Agent"]=this.ua,delete t.headers["Content-Length"]),this.isSurge()||this.isLoon())this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient[s](t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)});else if(this.isQuanX())t.method=s,this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t));else if(this.isNode()){this.initGotEnv(t);const{url:i,...r}=t;this.got[s](i,r).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>{const{message:s,response:i}=t;e(s,i,i&&i.body)})}}time(t,e=null){const s=e?new Date(e):new Date;let i={"M+":s.getMonth()+1,"d+":s.getDate(),"H+":s.getHours(),"m+":s.getMinutes(),"s+":s.getSeconds(),"q+":Math.floor((s.getMonth()+3)/3),S:s.getMilliseconds()};/(y+)/.test(t)&&(t=t.replace(RegExp.$1,(s.getFullYear()+"").substr(4-RegExp.$1.length)));for(let e in i)new RegExp("("+e+")").test(t)&&(t=t.replace(RegExp.$1,1==RegExp.$1.length?i[e]:("00"+i[e]).substr((""+i[e]).length)));return t}msg(e=t,s="",i="",r){const o=t=>{if(!t)return t;if("string"==typeof t)return this.isLoon()?t:this.isQuanX()?{"open-url":t}:this.isSurge()?{url:t}:void 0;if("object"==typeof t){if(this.isLoon()){let e=t.openUrl||t.url||t["open-url"],s=t.mediaUrl||t["media-url"];return{openUrl:e,mediaUrl:s}}if(this.isQuanX()){let e=t["open-url"]||t.url||t.openUrl,s=t["media-url"]||t.mediaUrl;return{"open-url":e,"media-url":s}}if(this.isSurge()){let e=t.url||t.openUrl||t["open-url"];return{url:e}}}};if(this.isMute||(this.isSurge()||this.isLoon()?$notification.post(e,s,i,o(r)):this.isQuanX()&&$notify(e,s,i,o(r))),!this.isMuteLog){let t=["","================================="];t.push(e),s&&t.push(s),i&&t.push(i),console.log(t.join("\n")),this.logs=this.logs.concat(t)}}log(...t){t.length>0&&(this.logs=[...this.logs,...t]),console.log(t.join(this.logSeparator))}logErr(t,e){const s=!this.isSurge()&&!this.isQuanX()&&!this.isLoon();s?this.log("",`\u2757\ufe0f${this.name},\u9519\u8bef!`,t.stack):this.log("",`\u2757\ufe0f${this.name},\u9519\u8bef!`,t)}wait(t){return new Promise(e=>setTimeout(e,t))}done(t={}){const e=(new Date).getTime(),s=(e-this.startTime)/1e3;this.log("",`${s}\u79d2`,`=================================`),(this.isSurge()||this.isQuanX()||this.isLoon())&&$done(t)}}(t,e)};
