@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20240126.03 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20240126.04 - 需啟用 MitM over HTTP/2
 #!system=ios
 
 [Rule]
@@ -15,7 +15,8 @@ URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT-DROP
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m|GH)\d+x\d+$,REJECT-DROP
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT-DROP
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0hGH\d,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$,REJECT-DROP
 URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png),REJECT
