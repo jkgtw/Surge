@@ -103,7 +103,7 @@ async function BahamutLogin(retry = 3, interval = 1000) { //登錄函數，拿�
 			.then(async (resp) => { //請求成功的處理
 				const body = JSON.parse(resp.body); //解析響應體json為對象
 				if (body.userid) { //如果成功返回用戶信息
-					$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=\w+)/)[1];
+					$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=[^;]+)/)[1];
 					return `✅巴哈姆特登錄成功`;
 				} else { //否則登錄失敗 (例如密碼錯誤)
 					const failMsg = body.error ? body.error.message : null; //判斷簽到失敗原因
