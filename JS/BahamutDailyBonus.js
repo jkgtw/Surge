@@ -351,6 +351,9 @@ function StartBahamutAnswer(answer, token) { //動畫瘋答題
 }
 
 function getArgs() {
+  if (typeof $argument === 'undefined') {
+    return '';
+  }
   return Object.fromEntries(
     $argument
       .split("&")
