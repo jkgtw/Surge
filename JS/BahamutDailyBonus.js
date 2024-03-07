@@ -35,23 +35,26 @@ cron "0 8 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/mas
 // 把兼容函數定義到$中, 以便統一調用
 const $ = new Env('巴哈姆特');
 
+// 取得模組arguments
+let args = getArgs();
+
 // 用戶名
-$.uid = $.getdata('@ND_BAHA.ID') || 'YourUserName';
+$.uid = $.getdata('@ND_BAHA.ID') || args.uid || 'YourUserName';
 
 // 用戶密碼
-$.pwd = $.getdata('@ND_BAHA.PW') || 'YourUserPassword';
+$.pwd = $.getdata('@ND_BAHA.PW') || args.pwd || 'YourUserPassword';
 
 // 兩步驗證Token, 16位數, 未設置請保持默認
-$.totp = $.getdata('@ND_BAHA.TOTP') || '';
+$.totp = $.getdata('@ND_BAHA.TOTP') || args.totp || '';
 
 // 是否開啓廣告簽到，true/false，默認關閉 (該功能耗時過長)
-$.needSignAds = $.getdata('@ND_BAHA.ADS') || false;
+$.needSignAds = $.getdata('@ND_BAHA.ADS') || args.needSignAds || false;
 
 // 是否自動簽到公會，true/false，默認開啓
-$.needSignGuild = $.getdata('@ND_BAHA.GUILD') || true;
+$.needSignGuild = $.getdata('@ND_BAHA.GUILD') || args.needSignGuild || true;
 
 // 是否自動答題動畫瘋，true/false，默認開啓 (不保證100%答題正確)
-$.needAnswer = $.getdata('@ND_BAHA.ANSWER') || true;
+$.needAnswer = $.getdata('@ND_BAHA.ANSWER') || args.needAnswer || true;
 
 //Bark APP 通知推送Key
 $.barkKey = '';
@@ -100,7 +103,7 @@ async function BahamutLogin(retry = 3, interval = 1000) { //登錄函數，拿�
 			.then(async (resp) => { //請求成功的處理
 				const body = JSON.parse(resp.body); //解析響應體json為對象
 				if (body.userid) { //如果成功返回用戶信息
-					$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=\w+)/)[1];
+					$.BAHARUNE = JSON.stringify(resp.headers).split(/(BAHARUNE=[^;]+)/)[1];
 					return `✅巴哈姆特登錄成功`;
 				} else { //否則登錄失敗 (例如密碼錯誤)
 					const failMsg = body.error ? body.error.message : null; //判斷簽到失敗原因
@@ -165,9 +168,8 @@ function StartAdsBonus(token, type) {
 		return; //退出廣告簽到函數
 	}
 	return $.http.post({ //使用post方法 (Promise實例對象) 進行簽到
-			url: 'https://api.gamer.com.tw/mobile_app/bahamut/v1/sign_in_ad_' + type + '.php', //雙倍巴幣廣告獎勵接口
+			url: 'https://api.gamer.com.tw/mobile_app/bahamut/v1/sign_in_ad_' + type + '.php?bahamutCsrfToken=' + token, //雙倍巴幣廣告獎勵接口
 			headers: {
-				'X-Bahamut-Csrf-Token': token, //前16位簽到Token
 				'Cookie': `ckBahamutCsrfToken=${token};${$.BAHARUNE}` //前16位簽到Token和重新設置的Cookie
 			}
 		})
@@ -346,6 +348,15 @@ function StartBahamutAnswer(answer, token) { //動畫瘋答題
 				throw new Error(body.msg || failMsg || '未知'); //否則帶上原因拋出異常, 被調用該函數時的catch捕獲
 			}
 		})
+}
+
+function getArgs() {
+  return Object.fromEntries(
+    $argument
+      .split("&")
+      .map((item) => item.split("="))
+      .map(([k, v]) => [k, v])
+  );
 }
 
 //Bark APP notify
