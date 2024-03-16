@@ -1,6 +1,6 @@
 #!name=巴哈姆特自動簽到
 #!desc=需要 Surge 版本 ≥ 5.9.0 (測試版 build ≥ 3027)
-#!arguments=Cron:10 0 * * *,帳號:,密碼:,二步驗證Token:false,是否開啟廣告簽到:false,是否開啟公會簽到:true,是否自動答題動畫瘋:true
+#!arguments=Cron:10 8 * * *,帳號,密碼,二步驗證Token:false,是否開啟廣告簽到:false,是否開啟公會簽到:true,是否自動答題動畫瘋:true
 #!arguments-desc=如果有開啟二步驗證請填入16位數Token\n預設關閉廣告簽到(耗時過長)
 
 [Script]
