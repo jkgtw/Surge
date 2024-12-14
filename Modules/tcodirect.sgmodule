@@ -1,0 +1,8 @@
+#!name=t.co direct
+#!desc=t.co 還原回原本的 url, 適用於 Safari(https://beeeeemo.dev/2024/12/利用-loon-移除-twitter/x.com-的超連結追蹤器/)
+
+[Script]
+t.co direct = type=http-response,pattern=^https:\/\/x\.com\/i\/api\/graphql\/[a-zA-Z0-9_-]+/(TweetDetail|HomeTimeline|HomeLatestTimeline),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/BeeeeeMo/Loon-plugins/refs/heads/main/Scripts/tco_direct.js
+
+[MITM]
+hostname = %APPEND% x.com
