@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20241204.02 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20250114.01 - 需啟用 MitM over HTTP/2
 #!system=ios
 
 [Rule]
@@ -8,17 +8,17 @@ URL-REGEX,^https:\/\/a\.line\.me\/er\/l.*\/v\d\/event\/image,REJECT-TINYGIF
 URL-REGEX,^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT-DROP
-URL-REGEX,^https:\/\/ad\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT-TINYGIF
+URL-REGEX,^https:\/\/ad\.line-scdn\.net\/0h,REJECT
 URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$,REJECT
 URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$,REJECT
 URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 URL-REGEX,^https:\/\/lan\.line\.me\/v1\/line\/ios,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v1$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com\/ext\/lgfp\/lad\/v1$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v1$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com\/ext\/smartch\/banner\/sch\/v1$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com\/tr\/event$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v1$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com\/ext\/lgfp\/lad\/v1$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v1$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com\/ext\/smartch\/banner\/sch\/v1$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
+#URL-REGEX,^https:\/\/legy\.line-apps\.com\/tr\/event$,REJECT
 URL-REGEX,^https:\/\/web-mmap-pay\.line-apps\.com\/tw\/liff\/campaign\/v1\/aggregate\/ad\/banner\/,REJECT-TINYGIF
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
@@ -39,4 +39,4 @@ URL-REGEX,^https:\/\/static\.line-scdn\.net\/ad-sdk\/,REJECT
 URL-REGEX,^https:\/\/nelo2-col\.linecorp\.com\/_store$,REJECT
 
 [MITM]
-hostname = %APPEND% a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, legy.line-apps.com, buy.line.me, crs-event.line.me, obs.line-scdn.net, cix.line-apps.com, d.line-scdn.net, scdn.line-apps.com, web-mmap-pay.line-apps.com, sch.line.me, uts-front.line-apps.com, static.line-scdn.net, nelo2-col.linecorp.com
+hostname = %APPEND% a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me, static.line-scdn.net, nelo2-col.linecorp.com, uts-front.line-apps.com, cix.line-apps.com, scdn.line-apps.com
