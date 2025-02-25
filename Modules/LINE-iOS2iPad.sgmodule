@@ -3,4 +3,4 @@
 #!category=Tweaks
 
 [Header Rewrite]
-#^https://legy.line-apps.com header-replace-regex x-line-application IOS IOSIPAD
+^https://legy.line-apps.com header-replace-regex x-line-application IOS IOSIPAD
