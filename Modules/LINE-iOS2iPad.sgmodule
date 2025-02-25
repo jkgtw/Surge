@@ -1,0 +1,6 @@
+#!name=LINE-iOS2iPad
+#!desc=Change LINE iOS to iPadOS v20250225
+#!category=Tweaks
+
+[Header Rewrite]
+#^https://legy.line-apps.com header-replace-regex x-line-application IOS IOSIPAD
