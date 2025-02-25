@@ -1,5 +1,5 @@
 #!name=LINE-iOS2iPad
-#!desc=Change LINE iOS to iPadOS, 啟用後打開 LINE，然後需要再關閉此模組才能正常登入 v20250225
+#!desc=Change LINE iOS to iPadOS - 啟用後打開 LINE，然後需要再關閉此模組才能正常登入 v20250225
 #!category=Tweaks
 
 [Header Rewrite]
