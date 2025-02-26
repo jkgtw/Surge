@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20250225.01 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20250226.01 - 需啟用 MitM over HTTP/2
 #!system=ios
 #!category=Tweaks
 
@@ -35,9 +35,6 @@ URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/event$,REJECT-DROP
 URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/settings$,REJECT-DROP
 URL-REGEX,^https:\/\/static\.line-scdn\.net\/ad-sdk\/,REJECT
 URL-REGEX,^https:\/\/nelo2-col\.linecorp\.com\/_store$,REJECT
-
-[Header Rewrite]
-^https://legy.line-apps.com header-replace-regex x-line-application iOS iPadOS
 
 [MITM]
 hostname = %APPEND% a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me, static.line-scdn.net, nelo2-col.linecorp.com, uts-front.line-apps.com, cix.line-apps.com, scdn.line-apps.com, legy.line-apps.com
