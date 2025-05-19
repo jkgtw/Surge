@@ -1,5 +1,5 @@
 #!name=Remove ADs
-#!desc=狙殺常見廣告（需手動更新外部資源） v20231104.01
+#!desc=狙殺常見廣告（需手動更新外部資源） v20250519.01
 
 [Rule]
 DOMAIN-SUFFIX,ad.ettoday.net,DIRECT
