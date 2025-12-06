@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20251205.02 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20251206.01 - 需啟用 MitM over HTTP/2
 #!system=ios
 #!category=Tweaks
 
@@ -39,7 +39,7 @@ URL-REGEX,^https:\/\/cix\.line-apps\.com\/R4\?,REJECT
 # ==========================================
 # 區域 2: 圖片與媒體廣告 (obs / scdn / ad)
 # ==========================================
-URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h[a-zA-Z0-9_-]{50}[a-zA-Z0-9_-]*,REJECT-TINYGIF
+URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h[a-zA-Z0-9_-]{50}[a-zA-Z0-9_-]*,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0hGH\d,REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT-DROP
