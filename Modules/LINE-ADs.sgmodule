@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20260211.01 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20260211.02 - 需啟用 MitM over HTTP/2
 #!system=ios
 #!category=Tweaks
 
@@ -15,13 +15,13 @@ URL-REGEX,^https:\/\/a\.line\.me\/oa\/v\d\/e$,REJECT-DROP
 URL-REGEX,^https:\/\/a\.line\.me\/cs\/v\d\/oa$,REJECT-DROP
 
 # LINE 網關與事件追蹤 (gw.line.naver.jp)
-URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$,REJECT
-URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$,REJECT
+URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v\d$,REJECT
+URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v\d\/ads$,REJECT
 URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 
 # Smart Channel 與內部 API (legy.line-apps.com)
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v\d$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v1$,REJECT
+URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v\d$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
 
@@ -52,7 +52,7 @@ URL-REGEX,^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png),REJ
 URL-REGEX,^https:\/\/static\.line-scdn\.net\/ad-sdk\/,REJECT
 
 # LINE 錢包/更多頁面/LIFF 相關廣告
-URL-REGEX,^https:\/\/web-mmap-pay\.line-apps\.com\/tw\/liff\/campaign\/v1\/aggregate\/ad\/banner\/,REJECT-TINYGIF
+URL-REGEX,^https:\/\/web-mmap-pay\.line-apps\.com\/tw\/liff\/campaign\/v\d\/aggregate\/ad\/banner\/,REJECT-TINYGIF
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json,REJECT
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/,REJECT-DROP
 URL-REGEX,^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/,REJECT-DROP
