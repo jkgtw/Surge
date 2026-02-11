@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20260211.02 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20260211.03 - 需啟用 MitM over HTTP/2
 #!system=ios
 #!category=Tweaks
 
@@ -26,7 +26,7 @@ URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModul
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
 
 # 其他 API 與追蹤
-URL-REGEX,^https:\/\/lan\.line\.me\/v1\/line\/ios,REJECT
+URL-REGEX,^https:\/\/lan\.line\.me\/v\d\/line\/ios,REJECT
 URL-REGEX,^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/,REJECT-DROP
 URL-REGEX,^https:\/\/buy\.line\.me\/api\/graphql\?variables,REJECT
 URL-REGEX,^https:\/\/crs-event\.line\.me\/v\d\/imp,REJECT-DROP
@@ -34,7 +34,7 @@ URL-REGEX,^https:\/\/sch\.line\.me\/api\/v\d\/ads$,REJECT-DROP
 URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/event$,REJECT-DROP
 URL-REGEX,^https:\/\/uts-front\.line-apps\.com\/settings$,REJECT-DROP
 URL-REGEX,^https:\/\/nelo2-col\.linecorp\.com\/_store$,REJECT
-URL-REGEX,^https:\/\/cix\.line-apps\.com\/R4\?,REJECT
+URL-REGEX,^https:\/\/cix\.line-apps\.com\/R\d\?,REJECT
 
 # ==========================================
 # 區域 2: 圖片與媒體廣告 (obs / scdn / ad)
