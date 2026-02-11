@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs
-#!desc=刪掉 LINE 惱人的廣告 v20251206.01 - 需啟用 MitM over HTTP/2
+#!desc=刪掉 LINE 惱人的廣告 v20260211.01 - 需啟用 MitM over HTTP/2
 #!system=ios
 #!category=Tweaks
 
@@ -20,7 +20,7 @@ URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$,REJECT
 URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 
 # Smart Channel 與內部 API (legy.line-apps.com)
-URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v1$,REJECT
+URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v\d$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v1$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
