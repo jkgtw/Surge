@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WireGuard 轉 Surge 格式轉換器</title>
+    <style>
+        :root {
+            --primary-color: #007aff;
+            --background-color: #f5f5f7;
+            --container-bg: #ffffff;
+            --border-color: #d2d2d7;
+            --text-color: #1d1d1f;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            flex: 1;
+        }
+        .panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--container-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+        .panel h2 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        textarea {
+            flex: 1;
+            resize: none;
+            padding: 12px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+            font-size: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            outline: none;
+            line-height: 1.5;
+        }
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
+        .actions {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .status {
+            font-size: 14px;
+            color: #34c759;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .config-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .config-name input {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            width: 200px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>WireGuard 轉 Surge 格式轉換器</h1>
+    
+    <div class="container">
+        <div class="panel">
+            <h2>1. 貼上 WireGuard 設定檔 (.conf)</h2>
+            <div class="config-name">
+                <label for="proxyName">代理策略名稱：</label>
+                <input type="text" id="proxyName" value="WireGuard" placeholder="例如：WG-Home">
+            </div>
+            <textarea id="wgInput" placeholder="[Interface]
+PrivateKey = xxxxxxxx
+Address = 10.0.0.2/24, fd00::2/64
+DNS = 8.8.8.8
+MTU = 1420
+
+[Peer]
+PublicKey = yyyyyyyy
+Endpoint = example.com:51820
+AllowedIPs = 0.0.0.0/0, ::/0"></textarea>
+        </div>
+        
+        <div class="panel">
+            <h2>
+                2. Surge 專用格式
+                <span class="status" id="copyStatus">已拷貝！</span>
+            </h2>
+            <textarea id="surgeOutput" readonly placeholder="轉換結果將顯示於此..."></textarea>
+            <div class="actions">
+                <span style="font-size: 13px; color: #86868b;">轉換為 Surge [Proxy] 及 Detached Profile 格式</span>
+                <button class="btn" id="copyBtn" onclick="copyToClipboard()">一鍵拷貝</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const wgInput = document.getElementById('wgInput');
+        const surgeOutput = document.getElementById('surgeOutput');
+        const proxyNameInput = document.getElementById('proxyName');
+
+        function parseWireGuard(config) {
+            const lines = config.split('\n');
+            let interfaceObj = {};
+            let peerObj = {};
+            let currentSection = null;
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (line.startsWith('[')) {
+                    currentSection = line;
+                    return;
+                }
+                if (!line || line.startsWith('#')) return;
+
+                let parts = line.split('=');
+                if (parts.length < 2) return;
+                
+                let key = parts[0].trim().toLowerCase();
+                let value = parts.slice(1).join('=').trim();
+
+                if (currentSection === '[Interface]') {
+                    interfaceObj[key] = value;
+                } else if (currentSection === '[Peer]') {
+                    peerObj[key] = value;
+                }
+            });
+
+            return { interfaceObj, peerObj };
+        }
+
+        function convertToSurge() {
+            const wgConfig = wgInput.value.trim();
+            const proxyName = proxyNameInput.value.trim() || 'WireGuard';
+            
+            if (!wgConfig) {
+                surgeOutput.value = '';
+                return;
+            }
+
+            const { interfaceObj, peerObj } = parseWireGuard(wgConfig);
+
+            // 解析 Address 提取 IPv4 與 IPv6
+            let selfIp = '';
+            let selfIpV6 = '';
+            if (interfaceObj.address) {
+                const ips = interfaceObj.address.split(',').map(s => s.trim());
+                const ipv4 = ips.find(ip => ip.includes('.'));
+                const ipv6 = ips.find(ip => ip.includes(':'));
+                if (ipv4) selfIp = ipv4.split('/')[0];
+                if (ipv6) selfIpV6 = ipv6.split('/')[0];
+            }
+
+            let output = `[Proxy]\n`;
+            output += `${proxyName} = wireguard, section-name=${proxyName}\n\n`;
+            output += `[WireGuard ${proxyName}]\n`;
+            
+            if (interfaceObj.privatekey) output += `private-key = ${interfaceObj.privatekey}\n`;
+            if (selfIp) output += `self-ip = ${selfIp}\n`;
+            if (selfIpV6) output += `self-ip-v6 = ${selfIpV6}\n`;
+            if (interfaceObj.dns) output += `dns-server = ${interfaceObj.dns}\n`;
+            if (interfaceObj.mtu) output += `mtu = ${interfaceObj.mtu}\n`;
+
+            let peerProps = [];
+            if (peerObj.publickey) peerProps.push(`public-key = ${peerObj.publickey}`);
+            if (peerObj.presharedkey) peerProps.push(`preshared-key = ${peerObj.presharedkey}`);
+            if (peerObj.allowedips) peerProps.push(`allowed-ips = "${peerObj.allowedips}"`);
+            if (peerObj.endpoint) peerProps.push(`endpoint = ${peerObj.endpoint}`);
+            
+            if (peerProps.length > 0) {
+                output += `peer = (${peerProps.join(', ')})\n`;
+            }
+
+            surgeOutput.value = output;
+        }
+
+        wgInput.addEventListener('input', convertToSurge);
+        proxyNameInput.addEventListener('input', convertToSurge);
+
+        function copyToClipboard() {
+            if (!surgeOutput.value) return;
+            
+            navigator.clipboard.writeText(surgeOutput.value).then(() => {
+                const status = document.getElementById('copyStatus');
+                status.style.opacity = '1';
+                setTimeout(() => {
+                    status.style.opacity = '0';
+                }, 2000);
+            }).catch(err => {
+                console.error('拷貝失敗: ', err);
+                alert('拷貝失敗，請手動複製！');
+            });
+        }
+    </script>
+</body>
+</html>
