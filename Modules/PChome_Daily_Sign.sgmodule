@@ -1,0 +1,11 @@
+#!name=🧧 PChome 每日簽到
+#!desc=每日自動 PChome App 簽到；預設 00:00~00:10 之間每日隨機一次。請先手動開啟 app 簽到頁或手動簽到時自動擷取 Cookie。
+#!system=ios
+#!arguments=SCRIPT_BASE_URL=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/JS,CRON_MINUTE=0-10,CRON_HOUR=0
+
+[Script]
+PChome Cookie = type=http-request,pattern=^https:\/\/ecapi\.pchome\.com\.tw\/fsapi\/marketing\/signingift\/v1\/(activity|signin),script-path=%SCRIPT_BASE_URL%/pchome_cookie.js,requires-body=false,timeout=5,debug=false
+PChome Signin = type=cron,cronexp="%CRON_MINUTE% %CRON_HOUR% * * *",script-path=%SCRIPT_BASE_URL%/pchome_signin.js,timeout=20,debug=false
+
+[MITM]
+hostname = %APPEND% ecapi.pchome.com.tw
