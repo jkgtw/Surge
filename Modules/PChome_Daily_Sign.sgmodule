@@ -1,5 +1,5 @@
 #!name=🧧 PChome 每日簽到
-#!desc=每日自動 PChome App 簽到；預設 00:00~00:10 之間每日隨機一次。請先手動開啟 app 簽到頁或手動簽到時自動擷取 Cookie。
+#!desc=每日自動 PChome App 簽到；預設 00:00~00:10 之間每日隨機一次。請先手動開啟 app 簽到頁或手動簽到時自動擷取 Cookie。v20260707.01
 #!system=ios
 #!arguments=CRON_MINUTE=0-10,CRON_HOUR=0
 
