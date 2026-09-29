@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs + Privacy
-#!desc=LINE 去廣告 + 遙測/追蹤/分析阻擋 v20260904.02（需啟用 MitM over HTTP/2）
+#!desc=LINE 去廣告 + 遙測/追蹤/分析阻擋 v20260929.01（需啟用 MitM over HTTP/2）
 #!system=ios
 #!category=Tweaks
 
@@ -37,6 +37,7 @@ DOMAIN,ad.line-scdn.net,REJECT
 # Observed URL example:
 # This host supplied the Home GEB banner creative captured from GetModulesByModuleIds.
 DOMAIN,ec-bot-obs.line-scdn.net,REJECT
+URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
 
 # LINE Web / LIFF Ads SDK
 URL-REGEX,^https:\/\/static\.line-scdn\.net(?::443)?\/ad-sdk\/,REJECT
