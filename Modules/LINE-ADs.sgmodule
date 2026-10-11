@@ -1,5 +1,5 @@
 #!name=Remove LINE ADs + Privacy
-#!desc=LINE 去廣告 + 遙測/追蹤/分析阻擋 v20260929.01（需啟用 MitM over HTTP/2）
+#!desc=LINE 去廣告 + 遙測/追蹤/分析阻擋 v20261011.01（需啟用 MitM over HTTP/2）
 #!system=ios
 #!category=Tweaks
 
@@ -65,8 +65,8 @@ URL-REGEX,^https:\/\/crs-event\.line\.me(?::443)?\/v\d+\/imp(?:\?|$),REJECT
 # uts-front is LINE's analytics endpoint; block the whole collector host.
 DOMAIN,uts-front.line-apps.com,REJECT
 
-# Also prevent LIFF/WebView pages from loading the UTS analytics SDK itself.
-URL-REGEX,^https:\/\/static\.line-scdn\.net(?::443)?\/uts\/,REJECT
+# Block UTS analytics SDK resources, except uts.js
+URL-REGEX,^https:\/\/static\.line-scdn\.net(?::443)?\/uts\/(?!(?:[^?]*\/)?uts\.js(?:\?|$)),REJECT
 
 # NELO2 diagnostics / log collector
 DOMAIN,nelo2-col.linecorp.com,REJECT
