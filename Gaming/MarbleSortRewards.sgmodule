@@ -6,7 +6,7 @@
 #!arguments-desc=金幣與道具包價格需填入 0 以上整數；留空使用預設值。
 
 [Script]
-MarbleSortRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.microdose\.balljam(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/MarbleSortRewards.js,requires-body=true,max-size=131072,argument="LevelReward={{{LevelReward}}}&HardLevelReward={{{HardLevelReward}}}&VeryHardLevelReward={{{VeryHardLevelReward}}}&BoosterShufflePackPrice={{{BoosterShufflePackPrice}}}&BoosterClearDockPackPrice={{{BoosterClearDockPackPrice}}}&BoosterRemoveBoxPackPrice={{{BoosterRemoveBoxPackPrice}}}"
+MarbleSortRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.microdose\.balljam(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/MarbleSortRewards.js,requires-body=true,max-size=2097152,argument="LevelReward={{{LevelReward}}}&HardLevelReward={{{HardLevelReward}}}&VeryHardLevelReward={{{VeryHardLevelReward}}}&BoosterShufflePackPrice={{{BoosterShufflePackPrice}}}&BoosterClearDockPackPrice={{{BoosterClearDockPackPrice}}}&BoosterRemoveBoxPackPrice={{{BoosterRemoveBoxPackPrice}}}"
 
 [MITM]
 hostname = %APPEND% remote-settings-v2.voodoo-tech.io
