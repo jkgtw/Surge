@@ -6,7 +6,7 @@
 #!arguments-desc=五項參數均可自訂，留空使用預設值；只接受 0 以上整數。數量代表每次購買取得的道具數，不影響初始持有量。
 
 [Script]
-HoleIoRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.nguyenvh\.holeio(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/HoleIoRewards.js,requires-body=true,max-size=524288,argument="LevelReward={{{LevelReward}}}&BiggerPrice={{{BiggerPrice}}}&SandglassPrice={{{SandglassPrice}}}&BiggerQuantity={{{BiggerQuantity}}}&SandglassQuantity={{{SandglassQuantity}}}"
+HoleIoRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.nguyenvh\.holeio(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/HoleIoRewards.js,requires-body=true,max-size=2097152,argument="LevelReward={{{LevelReward}}}&BiggerPrice={{{BiggerPrice}}}&SandglassPrice={{{SandglassPrice}}}&BiggerQuantity={{{BiggerQuantity}}}&SandglassQuantity={{{SandglassQuantity}}}"
 
 [MITM]
 hostname = %APPEND% remote-settings-v2.voodoo-tech.io
