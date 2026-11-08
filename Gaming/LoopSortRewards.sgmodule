@@ -6,7 +6,7 @@
 #!arguments-desc=三種過關獎勵及四種道具價格；留空使用預設值。
 
 [Script]
-LoopSortRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.Garawell\.LoopSort(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/LoopSortRewards.js,requires-body=true,max-size=131072,argument="WinReward={{{WinReward}}}&HardLevelReward={{{HardLevelReward}}}&SuperHardLevelReward={{{SuperHardLevelReward}}}&UndoCost={{{UndoCost}}}&ShuffleCost={{{ShuffleCost}}}&ConveyorCapacityCost={{{ConveyorCapacityCost}}}&CapacityCost={{{CapacityCost}}}"
+LoopSortRewards = type=http-response,pattern=^https:\/\/remote-settings-v2\.voodoo-tech\.io\/api\/settings\?(?:[^&#]*&)*bundle_id=com\.Garawell\.LoopSort(?:&|$),script-path=https://raw.githubusercontent.com/jkgtw/Surge/refs/heads/master/Gaming/LoopSortRewards.js,requires-body=true,max-size=2097152,argument="WinReward={{{WinReward}}}&HardLevelReward={{{HardLevelReward}}}&SuperHardLevelReward={{{SuperHardLevelReward}}}&UndoCost={{{UndoCost}}}&ShuffleCost={{{ShuffleCost}}}&ConveyorCapacityCost={{{ConveyorCapacityCost}}}&CapacityCost={{{CapacityCost}}}"
 
 [MITM]
 hostname = %APPEND% remote-settings-v2.voodoo-tech.io
